@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JEE PYQ CBT Practice - Made by DIVYANSH</title>
+<style>
+:root{--bg:#eceff3;--cd:#fff;--tx:#1d2733;--mu:#64707e;--bd:#ccd3dc;--pr:#1c6db5;--nv:#d8dbe0;--na:#e04a30;--an:#3a9d5d;--mk:#6a45b5;--bt:#f3f5f8;--side:#dff1fb;--top:#333;--ti:#f3e35b;--wa:#e8a317;--z:1.5}
+:root.dark{--bg:#10151b;--cd:#1a212a;--tx:#e5e9ef;--mu:#95a1af;--bd:#323f4d;--pr:#4b9de3;--nv:#38424f;--bt:#222b36;--side:#16232e;--top:#0b0e12;--ti:#e9d85a}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.45 "Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--tx)}
+header{background:var(--top);color:#fff;padding:9px 16px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:5;min-height:46px}
+header h1{font-size:15px;font-weight:600;margin:0;color:var(--ti);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:46vw}
+.by{font-size:12px;color:#d5dbe3;border:1px solid rgba(255,255,255,.3);border-radius:99px;padding:2px 10px;white-space:nowrap}
+.by b{color:var(--ti);letter-spacing:.3px}
+.sp{flex:1}
+#tm{font:600 15px "Segoe UI",sans-serif;color:#fff;white-space:nowrap}
+#tm.ot{color:#ff9d85}
+header button{background:transparent;color:#fff;border-color:rgba(255,255,255,.4);padding:5px 12px}
+button{font:inherit;cursor:pointer;border:1px solid var(--bd);background:var(--bt);color:var(--tx);padding:8px 14px;border-radius:5px}
+button:hover:not(:disabled){border-color:var(--pr)}
+button:disabled{opacity:.5;cursor:not-allowed}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--pr);outline-offset:1px}
+button.sm{padding:3px 10px;font-size:13px}
+.pri{background:var(--pr)!important;border-color:var(--pr)!important;color:#fff!important}
+.dg{background:var(--na)!important;border-color:var(--na)!important;color:#fff!important}
+.wrap{max-width:1180px;margin:0 auto;padding:16px}
+.card{background:var(--cd);border:1px solid var(--bd);border-radius:8px;padding:16px;margin-bottom:14px}
+.card h2{margin:0 0 4px;font-size:18px}.card h3{margin:0 0 8px;font-size:16px}
+label{display:block;margin:10px 0 3px;font-weight:600}small,.mu{color:var(--mu)}
+input,select,textarea{font:inherit;width:100%;padding:8px;border:1px solid var(--bd);border-radius:5px;background:var(--cd);color:var(--tx)}
+input[type=checkbox],input[type=radio]{width:auto;margin:0}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;align-items:center}
+.ok{color:var(--an);font-weight:600}.no{color:var(--na);font-weight:600}.sk{color:var(--mu)}
+.warn{background:#fff4d6;border:1px solid #e8c76a;color:#5a4300;border-radius:6px;padding:8px 12px;margin:10px 0;font-size:14px}
+.dark .warn{background:#3a3115;border-color:#6b5a1f;color:#f0dc9a}
+.good{background:#e6f5ea;border:1px solid #9fd2ae;color:#1d5a30;border-radius:6px;padding:8px 12px;margin:10px 0;font-size:14px}
+.dark .good{background:#17301f;border-color:#2c6a41;color:#a7e0b9}
+.steps{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}.steps .no1{background:var(--pr);color:#fff;border-radius:50%;width:24px;height:24px;display:inline-grid;place-items:center;font-size:13px;font-weight:700;flex:none}
+.drop{border:2px dashed var(--bd);border-radius:8px;padding:18px;text-align:center;margin-top:10px;cursor:pointer;background:var(--bt)}
+.drop.hov{border-color:var(--pr)}
+.book{display:flex;gap:10px;align-items:center;border:1px solid var(--bd);border-radius:6px;padding:8px 12px;margin-top:8px;background:var(--bt)}
+.book .bn{flex:1}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}.tab.on{background:var(--pr);color:#fff;border-color:var(--pr)}
+.bh{display:flex;align-items:center;gap:8px;margin:14px 0 6px}
+.chl{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:6px}
+.chr{display:flex;align-items:center;gap:8px;padding:6px 9px;border:1px solid var(--bd);border-radius:6px;background:var(--bt);cursor:pointer;margin:0;font-weight:400;font-size:14px}
+.chr.on{border-color:var(--pr);box-shadow:inset 0 0 0 1px var(--pr)}
+.chr .cn{flex:1;min-width:0}
+.chr .cc{font-size:12px;color:var(--mu);white-space:nowrap}.chr .cc b{color:var(--tx)}
+.b2{font-style:normal;font-size:11px;padding:0 6px;border-radius:9px;background:var(--nv);white-space:nowrap}
+.b2.w{background:rgba(224,74,48,.18);color:var(--na)}.b2.s{background:rgba(232,163,23,.22);color:#a56d00}.dark .b2.s{color:#f0b84a}.b2.c{background:rgba(58,157,93,.2);color:var(--an)}
+.plan{border:1px solid var(--pr);border-radius:8px;padding:10px 14px;margin-top:14px;background:var(--bt)}
+.plan b{font-size:17px}
+.chk{display:inline-flex;align-items:center;gap:6px;margin:0 14px 0 0;font-weight:400;cursor:pointer}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}.stat{background:var(--bt);border-radius:8px;padding:10px 12px}.stat b{display:block;font-size:22px}
+table{width:100%;border-collapse:collapse}td,th{padding:6px 8px;border-bottom:1px solid var(--bd);text-align:left;font-size:14px}th{white-space:nowrap}tr.r{cursor:pointer}tr.r:hover{background:var(--bt)}
+.tb{height:14px;border-radius:4px;display:inline-block;vertical-align:middle}
+.ab{display:inline-block;width:60px;height:8px;background:var(--nv);border-radius:4px;vertical-align:middle;overflow:hidden}.ab i{display:block;height:100%;background:var(--an)}
+ul.ins{margin:6px 0 0;padding-left:20px}ul.ins li{margin:4px 0}
+#ov{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:50;display:grid;place-items:center}#ov[hidden]{display:none}
+#ov .box{background:var(--cd);border-radius:10px;padding:22px 28px;min-width:300px;max-width:90vw;text-align:center}
+.pb{height:8px;background:var(--nv);border-radius:5px;overflow:hidden;margin-top:12px}.pb i{display:block;height:100%;width:0;background:var(--pr);transition:width .15s}
+/* ---------- exam ---------- */
+.full{max-width:none!important;padding:0!important}
+.ex{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:0;align-items:stretch;min-height:calc(100vh - 46px)}
+.mainp{padding:14px 20px 90px;background:var(--cd)}
+.qinfo{display:flex;justify-content:space-between;font-size:13px;flex-wrap:wrap;gap:6px}
+.qno{margin:12px 0 10px;font-weight:600;font-size:14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.qno .zb{margin-left:auto;display:flex;gap:4px;align-items:center;font-weight:400;font-size:12px;color:var(--mu)}.zb button{padding:1px 9px}
+.stabs{display:flex;gap:6px;margin:10px 0 0;flex-wrap:wrap}.stabs button{border-radius:3px}.stabs button.on{background:#1f7ab8;border-color:#1f7ab8;color:#fff}
+img.q{border:0;max-width:100%;height:auto;display:block;background:#fff}
+.dark img.q{filter:invert(1) hue-rotate(180deg);mix-blend-mode:screen}
+.ans{margin-top:16px}
+.opts{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.opt{min-width:54px;font-weight:600}.opt.on{background:#1f7ab8;border-color:#1f7ab8;color:#fff}
+#num{max-width:220px;font:600 18px ui-monospace,monospace}
+.key{display:grid;grid-template-columns:repeat(4,56px);gap:6px;margin-top:8px}.key button{padding:10px 0}
+.side{background:var(--side);padding:14px;align-self:stretch;border-left:1px solid var(--bd)}
+.lg{display:grid;grid-template-columns:1fr 1fr;gap:10px 6px;font-size:12px;margin-bottom:10px}
+.sec{background:#1f7ab8;color:#fff;font-weight:600;padding:8px 10px;margin:14px -14px 8px}.ch{margin:10px 0;font-size:13px;color:var(--mu)}
+.sh,.p{display:inline-grid;place-items:center;width:30px;height:28px;font-size:12px;font-weight:600;color:#fff;border:0;padding:0;vertical-align:middle}.sh{margin-right:6px}
+.p{width:38px;height:36px;font-size:13px;margin:auto;border-radius:0;position:relative}
+.pal{display:grid;grid-template-columns:repeat(4,1fr);gap:10px 4px}
+.s0{background:#e3e3e3;color:#222!important;border:1px solid #b5b5b5;border-radius:3px}
+.s1{background:#e2501f;clip-path:polygon(0 0,100% 0,100% 72%,50% 100%,0 72%)}
+.s2{background:#5fb52f;clip-path:polygon(0 28%,50% 0,100% 28%,100% 100%,0 100%)}
+.s3,.s4{background:#7b4aa0;border-radius:50%!important;position:relative}.s4::after{content:"";position:absolute;right:1px;bottom:1px;width:11px;height:11px;border-radius:50%;background:#5fb52f;border:1px solid #fff}
+.p.cur{transform:scale(1.14);filter:drop-shadow(0 0 3px #e8845a) brightness(1.12)}
+.subm{background:#187db3;border:0;color:#fff;padding:12px 38px;font-size:15px;font-weight:600;border-radius:3px}
+.foot{position:fixed;left:0;right:300px;bottom:0;background:var(--cd);border-top:1px solid var(--bd);padding:12px 16px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;z-index:4}.foot button{border-radius:3px}
+.pgfoot{text-align:center;color:var(--mu);font-size:12px;padding:6px 0 18px}
+@media(max-width:820px){.qw{overflow-x:auto}.qw img.q{max-width:none}.ex{grid-template-columns:minmax(0,1fr)}.foot{right:0}.mainp{padding-bottom:110px}.g2,.g3,.g4{grid-template-columns:1fr}.by{display:none}.side{border-left:0}}
+
+/* ---------- folders / charts ---------- */
+.plus{width:28px;height:28px;border-radius:50%;padding:0;border:2px solid var(--pr);background:transparent;color:var(--pr);font:700 18px/1 "Segoe UI",sans-serif;display:inline-grid;place-items:center;vertical-align:middle;flex:none}
+.plus.on{background:var(--pr);color:#fff}
+#md{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:60;display:grid;place-items:center;padding:12px}
+.mbox{background:var(--cd);color:var(--tx);border-radius:10px;padding:16px 18px;width:min(460px,100%);max-height:92vh;overflow:auto;box-shadow:0 10px 40px rgba(0,0,0,.4)}
+.mh{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.mfl{margin-top:10px;max-height:34vh;overflow:auto;border:1px solid var(--bd);border-radius:6px;padding:2px 10px}
+.mrow{display:flex;margin:0;padding:7px 0;width:100%;border-bottom:1px solid var(--bd)}.mrow:last-child{border:0}
+.frow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;border:1px solid var(--bd);background:var(--bt);border-radius:6px;padding:8px 12px;margin-top:8px}.frow .fn{flex:1;min-width:160px}
+.sqh{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+.b2.st{background:rgba(232,163,23,.22);color:#a56d00}.dark .b2.st{color:#f0b84a}
+.fnr{background:var(--bt);border-radius:5px;padding:5px 9px;margin:4px 0;font-size:14px}
+textarea{resize:vertical}
+.sb{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:13px}.sbn{width:34%;min-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sbt{flex:1;display:flex;height:14px;border-radius:4px;overflow:hidden;background:var(--nv)}.sbt i{display:block;height:100%}.sbv{width:74px;text-align:right;color:var(--mu);font-size:12px}
+.lgd{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--mu);margin-top:6px}.lgd i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.chart{overflow-x:auto}.chart svg{display:block;color:var(--tx)}
+</style></head><body>
+<header><h1 id="ttl">JEE PYQ CBT Practice</h1><span class="by">Made by <b>DIVYANSH</b></span><span class="sp"></span><span id="tm" hidden></span><button onclick="tg()" id="thm" aria-label="Toggle dark mode">Dark mode</button></header>
+<div class="wrap" id="app"></div>
+<div id="ov" hidden><div class="box"><b id="ovt">Working…</b><div class="pb"><i id="ovb"></i></div><small id="ovs"></small></div></div>
+<script type="module">import*as p from"./lib/pdf.min.mjs";p.GlobalWorkerOptions.workerSrc="./lib/pdf.worker.min.mjs";window.pdfjsLib=p;dispatchEvent(new Event("pdfready"))</script>
+<script>
+/* =====================================================================
+   JEE PYQ CBT Practice  -  made by DIVYANSH
+   Reads MathonGo-style "Top 500 PYQs" PDFs (questions + answer key at the end).
+   Everything runs in the browser. Progress is kept in localStorage and can be
+   exported / imported as a JSON file.
+   ===================================================================== */
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],A=$('#app');
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let STORE_FAIL=false;
+const ls=(k,v)=>{try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){STORE_FAIL=true}return null};
+const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')||'book';
+const fmt=s=>{s=Math.max(0,Math.round(s));const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;return h?h+':'+String(m).padStart(2,'0')+':'+String(x).padStart(2,'0'):m+':'+String(x).padStart(2,'0')};
+const SC=2.5; /* render scale for question images */
+
+/* ---------- theme ---------- */
+function theme(t){document.documentElement.classList.toggle('dark',t=='dark');$('#thm').textContent=t=='dark'?'Light mode':'Dark mode';ls('jp_theme',t)}
+function tg(){theme(document.documentElement.classList.contains('dark')?'light':'dark')}
+theme(ls('jp_theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));
+
+/* ---------- settings (remembered) ---------- */
+const CFG=Object.assign({tm:'q',mins:2,mp:4,mn:4,shuf:false,auto:true,z:1.5,name:'',mode:'ch',rule:'all',n:5,a:1,b:5,filt:['new','skipped']},(()=>{try{return JSON.parse(ls('jp_cfg')||'{}')}catch(e){return{}}})());
+const saveCfg=()=>ls('jp_cfg',JSON.stringify(CFG));
+document.documentElement.style.setProperty('--z',CFG.z);
+
+/* ---------- progress database ---------- */
+function loadDB(){try{const d=JSON.parse(ls('jp_db')||'null');if(d&&d.books)return{books:d.books,hist:d.hist||[],folders:d.folders||{},sv:d.sv||{}}}catch(e){}return{books:{},hist:[],folders:{},sv:{}}}
+let DB=loadDB();
+const saveDB=()=>ls('jp_db',JSON.stringify(DB));
+const setDirty=v=>ls('jp_dirty',v?'1':'0');
+const isDirty=()=>ls('jp_dirty')=='1';
+const st=(b,n)=>{const r=DB.books[b.slug]&&DB.books[b.slug].q[n];return!r?'new':r.s=='c'?'correct':r.s=='w'?'wrong':'skipped'};
+
+/* ---------- state ---------- */
+let BOOKS=[],S=null,iv=null,PL=null;
+const SEL={chs:new Set(),bk:0,nums:'',pages:'',fo:new Set()};
+const FILT=new Set(CFG.filt);
+const pdfReady=()=>window.pdfjsLib?Promise.resolve():new Promise((ok,no)=>{addEventListener('pdfready',ok,{once:true});setTimeout(()=>no(new Error('the PDF reader did not load - open the website over http/https (not as a local file)')),10000)});
+const ov=(t,p,s)=>{$('#ov').hidden=t===null;if(t!==null){$('#ovt').textContent=t;$('#ovb').style.width=Math.round((p||0)*100)+'%';$('#ovs').textContent=s||''}};
+
+/* =====================================================================
+   PDF reading
+   ===================================================================== */
+function rowsText(items){ /* items -> text in reading order (row by row) */
+ const a=items.slice().sort((p,q)=>p.y-q.y||p.x-q.x),L=[];
+ for(const it of a){const l=L[L.length-1];if(l&&Math.abs(l.y-it.y)<=3)l.it.push(it);else L.push({y:it.y,it:[it]})}
+ return L.map(l=>l.it.sort((p,q)=>p.x-q.x).map(i=>i.s).join(' ')).join(' ')}
+function parseKey(text){const m={},re=/(\d{1,4})\s*\.\s*(\(\s*[1-4]\s*\)|[-−–]?\s*\d+(?:\.\d+)?)/g;let x;
+ while((x=re.exec(text))){const n=+x[1];if(m[n]!==undefined)continue;const v=x[2].replace(/\s+/g,'').replace(/[−–]/g,'-');m[n]=v[0]=='('?{t:'S',a:v.replace(/[()]/g,'')}:{t:'N',a:v}}
+ return m}
+
+async function parseBook(file,onp){
+ await pdfReady();
+ const pdf=await pdfjsLib.getDocument({data:await file.arrayBuffer()}).promise,N=pdf.numPages;
+ const pages=[],keyItems=[];let keyP=0,keyY=0,title='';
+ for(let p=1;p<=N;p++){
+  onp&&onp(p,N);
+  const pg=await pdf.getPage(p),vp=pg.getViewport({scale:1}),W=vp.width,H=vp.height,tc=await pg.getTextContent(),I=[];
+  for(const it of tc.items){const s=(it.str||'').trim();if(!s)continue;const[x,y]=vp.convertToViewportPoint(it.transform[4],it.transform[5]);I.push({s,x,y,h:it.height||10,w:it.width||0})}
+  pg.cleanup();
+  const P={p,W,H,marks:[],opt:[],top0:.07*H,bot:.93*H};
+  const hd=I.filter(i=>i.y<.075*H);
+  if(hd.length){P.top0=Math.max(...hd.map(i=>i.y))+8;if(!title){const t=rowsText(hd).replace(/\s*MathonGo\s*$/i,'').trim();if(/PYQ|Top\s*\d+/i.test(t))title=t}}
+  const ft=I.find(i=>/^Text\s*&\s*Video/i.test(i.s));if(ft)P.bot=ft.y-11;
+  const kh=I.find(i=>/^ANSWER\s*KEYS?$/i.test(i.s));
+  if(kh&&!keyP){keyP=p;keyY=kh.y}
+  const isKey=keyP&&p>=keyP;
+  if(isKey){for(const i of I){if(p===keyP&&i.y<=keyY+1)continue;if(i.y<P.top0||i.y>P.bot+4)continue;keyItems.push({p,x:i.x,y:i.y,s:i.s})}}
+  if(!(isKey&&p>keyP)){
+   for(const i of I){
+    if(isKey&&p===keyP&&i.y>keyY+1)continue;
+    let m;
+    if(i===kh){P.marks.push({t:'k',y:i.y,top:i.y-i.h-2})}
+    else if(i.x<.2*W&&(m=i.s.match(/^Q\s*(\d+)\s*\.\s*(.*)$/))){
+     const line=I.filter(o=>o!==i&&Math.abs(o.y-i.y)<2.5&&o.x>i.x).sort((a,b)=>a.x-b.x);
+     const title2=(m[2]+' '+line.map(o=>o.s).join(' ')).trim(),x1=Math.max(i.x+i.w,...line.map(o=>o.x+o.w));
+     P.marks.push({t:'q',n:+m[1],title:title2,y:i.y,top:i.y-i.h-1.5,mask:{x0:i.x-3,x1:x1+3,y0:i.y-i.h-1.5,y1:i.y+i.h*.4}})}
+    else if(i.x<.2*W&&/^Chapter\s*:/i.test(i.s)){
+     let name=i.s.replace(/^Chapter\s*:\s*/i,'').trim();
+     if(!name){const o=I.filter(o=>o!==i&&Math.abs(o.y-i.y)<2.5&&o.x>i.x).sort((a,b)=>a.x-b.x);name=o.map(z=>z.s).join(' ')}
+     P.marks.push({t:'c',name,y:i.y,top:i.y-i.h-2})}
+    if(/^\(\s*1\s*\)/.test(i.s))P.opt.push(i.y)}
+  }
+  pages.push(P)}
+ /* ---- build the question index ---- */
+ const chs=[],cmap=new Map(),qs=[];let cur=null,last=null,lastN=0;
+ const chap=name=>{const k=name.toLowerCase().replace(/[^a-z0-9]+/g,'');let c=cmap.get(k);if(!c){c={name:name||'Questions',qs:[]};cmap.set(k,c);chs.push(c)}return c};
+ for(const P of pages){
+  if(keyP&&P.p>keyP)break;
+  let ms=P.marks.slice().sort((a,b)=>a.y-b.y),ln=lastN;
+  ms=ms.filter(m=>{if(m.t!='q')return true;if(m.n<=ln)return false;ln=m.n;return true});
+  const e0=ms.length?ms[0].top:P.bot;
+  if(last&&e0-P.top0>4&&!(ms.length&&ms[0].t=='k'))last.segs.push({p:P.p,y0:P.top0,y1:e0});
+  const prev=last;
+  ms.forEach((m,i)=>{
+   if(m.t=='c'){cur=chap(m.name);return}
+   if(m.t!='q')return;
+   if(!cur)cur=chap('All questions');
+   const nx=ms[i+1],q={n:m.n,src:m.title,chn:cur.name,segs:[{p:P.p,y0:m.top,y1:nx?nx.top:P.bot,mk:m.mask}],opt1:false,ans:null,type:null};
+   qs.push(q);cur.qs.push(q);last=q;lastN=m.n;m.q=q});
+  for(const y of P.opt){let o=null;for(const m of ms)if(m.t=='q'&&m.y<=y)o=m.q;o=o||prev;if(o)o.opt1=true}
+ }
+ /* ---- answer key ---- */
+ const byP={};keyItems.forEach(k=>(byP[k.p]=byP[k.p]||[]).push(k));
+ const key=parseKey(Object.keys(byP).sort((a,b)=>a-b).map(p=>rowsText(byP[p])).join(' '));
+ const warn=[];let nk=0;
+ for(const q of qs){const k=key[q.n];if(k){q.ans=k.a;q.type=k.t;nk++}else{q.type=q.opt1?'S':'N'}}
+ if(!qs.length)throw new Error('no questions found - is this a MathonGo "Top 500 PYQs" PDF?');
+ if(!keyP)warn.push('No "ANSWER KEYS" page was found, so results cannot be graded.');
+ else if(nk<qs.length)warn.push('Answers are missing for '+(qs.length-nk)+' question(s); they will be shown as ungraded.');
+ const gaps=[];for(let i=1;i<qs.length;i++)if(qs[i].n!=qs[i-1].n+1)gaps.push(qs[i-1].n+1);
+ if(gaps.length)warn.push('Question numbers skipped near Q'+gaps.slice(0,5).join(', Q')+' - those could not be read.');
+ const chapters=chs.filter(c=>c.qs.length);chapters.forEach(c=>c.qs.forEach(q=>q.ci=chapters.indexOf(c)));
+ title=title||file.name.replace(/\.pdf$/i,'');
+ return{slug:slug(title),name:title,subject:title.split(/\s+Top\s+\d+/i)[0].trim()||title,file:file.name,pages:N,pdf,qs,chapters,nk,warn,img:new Map(),byNum:new Map(qs.map(q=>[q.n,q]))}
+}
+
+/* ---- render selected questions to images ---- */
+function crop(cx,W,H,a,b){
+ a=Math.max(0,Math.floor(a));b=Math.min(H,Math.ceil(b));const h=b-a;if(h<6)return null;
+ const x0=Math.floor(W*.05),w=Math.floor(W*.97)-x0,d=cx.getImageData(x0,a,w,h).data;let f=-1,l=-1;
+ for(let r=0;r<h;r++){for(let c=0;c<w;c+=2){const i=(r*w+c)*4;if(d[i]+d[i+1]+d[i+2]<390){if(f<0)f=r;l=r;break}}}
+ if(f<0)return null;
+ const y0=Math.max(0,f-8),y1=Math.min(h,l+10),c2=document.createElement('canvas');c2.width=w;c2.height=y1-y0;
+ const g=c2.getContext('2d');g.fillStyle='#fff';g.fillRect(0,0,w,y1-y0);g.drawImage(cx.canvas,x0,a+y0,w,y1-y0,0,0,w,y1-y0);return c2}
+async function renderBook(bk,qs,cb){
+ const byPage=new Map(),pieces=new Map();
+ qs.forEach(q=>q.segs.forEach(sg=>{if(!byPage.has(sg.p))byPage.set(sg.p,[]);byPage.get(sg.p).push({q,sg})}));
+ const pgs=[...byPage.keys()].sort((a,b)=>a-b);let k=0;
+ for(const p of pgs){
+  cb(k/pgs.length,'Page '+p+' ('+(k+1)+' of '+pgs.length+')');
+  const pg=await bk.pdf.getPage(p),vp=pg.getViewport({scale:SC}),cv=document.createElement('canvas');
+  cv.width=Math.ceil(vp.width);cv.height=Math.ceil(vp.height);
+  const cx=cv.getContext('2d',{willReadFrequently:true});cx.fillStyle='#fff';cx.fillRect(0,0,cv.width,cv.height);
+  await pg.render({canvasContext:cx,viewport:vp}).promise;
+  for(const{q,sg}of byPage.get(p)){
+   if(sg.mk){cx.fillStyle='#fff';cx.fillRect(sg.mk.x0*SC,sg.mk.y0*SC,(sg.mk.x1-sg.mk.x0)*SC,(sg.mk.y1-sg.mk.y0)*SC)}
+   const c=crop(cx,cv.width,cv.height,sg.y0*SC,sg.y1*SC);if(c){if(!pieces.has(q))pieces.set(q,[]);pieces.get(q).push(c)}}
+  pg.cleanup();k++;await new Promise(r=>setTimeout(r,0))}
+ for(const q of qs){
+  const ps=pieces.get(q);if(!ps||!ps.length){bk.img.set(q.n,null);continue}
+  const w=Math.max(...ps.map(c=>c.width)),h=ps.reduce((a,c)=>a+c.height+4,0),c=document.createElement('canvas');
+  c.width=w;c.height=h;const x=c.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,w,h);let y=0;ps.forEach(s=>{x.drawImage(s,0,y);y+=s.height+4});
+  bk.img.set(q.n,{url:c.toDataURL('image/jpeg',.9),ptw:Math.round(w/SC),np:ps.length})}
+}
+
+/* =====================================================================
+   Setup screen
+   ===================================================================== */
+function setup(){
+ clearInterval(iv);S=null;$('#tm').hidden=true;$('#ttl').textContent='JEE PYQ CBT Practice';A.className='wrap';scrollTo(0,0);
+ A.innerHTML=`<div id="cDirty"></div><div id="cSaved"></div><div id="cProg"></div><div id="cBooks"></div><div id="cSel"></div><div id="cHist"></div><div class="pgfoot">Made by DIVYANSH · your data stays in your browser</div>`;
+ rDirty();rProg();rBooks();rSel();rHist();
+}
+function rDirty(){const e=$('#cDirty');if(!e)return;
+ e.innerHTML=(STORE_FAIL?'<div class="warn"><b>Browser storage is blocked.</b> Your progress will not be remembered automatically - download the progress file after every test.</div>':'')+
+ (isDirty()?'<div class="warn"><b>Unsaved progress:</b> you have new results that are not in a downloaded file yet. <button class="sm pri" onclick="dl()">Download progress file</button></div>':'')}
+
+/* ---- step 1: progress ---- */
+function bookStats(b){let c=0,w=0,u=0;for(const n in b.q){const s=b.q[n].s;s=='c'?c++:s=='w'?w++:u++}return{c,w,u}}
+function rProg(){
+ const e=$('#cProg'),ks=Object.keys(DB.books).filter(k=>Object.keys(DB.books[k].q).length);
+ const rows=ks.map(k=>{const b=DB.books[k],s=bookStats(b);return`<tr><td>${esc(b.name||k)}</td><td class="ok">${s.c}</td><td class="no">${s.w}</td><td class="sk">${s.u}</td><td>${s.c+s.w+s.u}</td></tr>`}).join('');
+ e.innerHTML=`<div class="card"><div class="steps"><span class="no1">1</span><h2>Your progress <small>(optional)</small></h2></div>
+ <small>Coming back? Load the progress file you downloaded last time so the app knows which questions you already did, got wrong or skipped. First time? Skip this step.</small>
+ ${rows?`<table style="margin-top:10px"><tr><th>Book</th><th>Correct</th><th>Wrong</th><th>Skipped</th><th>Total done</th></tr>${rows}</table>`:'<p class="mu" style="margin:10px 0 0">No saved progress yet.</p>'}
+ <div class="bar"><button class="pri" onclick="dl()">Download progress file</button><button onclick="$('#imp').click()">Load progress file</button><button onclick="resetAll()">Reset everything</button><input type="file" id="imp" accept=".json,application/json" hidden onchange="imp(this)"></div><p id="dmsg" style="margin:8px 0 0"></p></div>`;rSaved()}
+function dl(){
+ const b=new Blob([JSON.stringify({app:'jee-pyq',v:3,at:new Date().toISOString(),books:DB.books,hist:DB.hist,folders:DB.folders,sv:DB.sv})],{type:'application/json'}),a=document.createElement('a');
+ a.href=URL.createObjectURL(b);a.download='jee-pyq-progress-'+new Date().toISOString().slice(0,10)+'.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),2000);
+ setDirty(false);rDirty()}
+async function imp(i){
+ const f=i.files[0];let t,cl='no';if(!f)return;
+ try{const d=JSON.parse(await f.text());if(d.app!=='jee-pyq'||!d.books)throw 0;let nq=0;
+  for(const k in d.books){const src=d.books[k],dst=DB.books[k]||(DB.books[k]={name:src.name,q:{}});dst.name=dst.name||src.name;
+   for(const n in src.q){const a=dst.q[n],b=src.q[n];if(!a||(b.ts||0)>(a.ts||0)){dst.q[n]=b;nq++}}}
+  const ids=new Set(DB.hist.map(h=>h.id));let nh=0;(d.hist||[]).forEach(h=>{if(!ids.has(h.id)){DB.hist.push(h);nh++}});
+  DB.hist.sort((a,b)=>a.ts-b.ts);
+  let nf=0;const F=d.folders||{},V=d.sv||{};
+  for(const id in F){const a=DB.folders[id];if(!a||(F[id].ts||0)>(a.ts||0)){DB.folders[id]=F[id];nf++}}
+  for(const k in V){const a=DB.sv[k];if(!a||(V[k].ts||0)>(a.ts||0)){DB.sv[k]=V[k]}}
+  saveDB();t='Loaded '+nq+' question record(s), '+nh+' past test(s)'+(Object.keys(F).length?' and your folders & notes':'')+'.';cl='ok';setDirty(false)}
+ catch(e){t='That file is not a progress file made by this app.'}
+ i.value='';rDirty();rProg();rBooks();rSel();rHist();const m=$('#dmsg');if(m){m.textContent=t;m.className=cl}}
+function resetAll(){if(!confirm('Delete ALL saved progress, test history, folders and notes from this browser? (Download a backup first if unsure.)'))return;DB={books:{},hist:[],folders:{},sv:{}};saveDB();setDirty(false);rDirty();rProg();rBooks();rSel();rHist()}
+
+/* ---- step 2: PDFs ---- */
+function rBooks(){
+ const e=$('#cBooks');
+ e.innerHTML=`<div class="card"><div class="steps"><span class="no1">2</span><h2>Add your question PDF(s)</h2></div>
+ <small>Use the MathonGo "Top 500 PYQs" PDFs (the answer key on the last pages is read automatically). You can add Maths, Chemistry and Physics together and mix them in one test.</small>
+ ${BOOKS.map((b,i)=>`<div class="book"><div class="bn"><b>${esc(b.name)}</b><br><small>${b.qs.length} questions · ${b.chapters.length} chapters · ${b.nk} answers read · ${b.pages} pages${b.auto?' · loaded from the website':''}</small>${b.warn.map(w=>`<div class="warn" style="margin:6px 0 0">${esc(w)}</div>`).join('')}</div><button class="sm" onclick="rmBook(${i})">Remove</button></div>`).join('')}
+ <div class="drop" id="drop" onclick="$('#pf').click()"><b>Click to choose PDF file(s)</b> or drop them here<input type="file" id="pf" accept="application/pdf" multiple hidden onchange="addPdfs(this.files);this.value=''"></div>
+ <p id="bmsg" class="no" style="margin:8px 0 0"></p></div>`;
+ const d=$('#drop');d.ondragover=ev=>{ev.preventDefault();d.classList.add('hov')};d.ondragleave=()=>d.classList.remove('hov');d.ondrop=ev=>{ev.preventDefault();d.classList.remove('hov');addPdfs(ev.dataTransfer.files)}}
+async function addPdfs(files){
+ const msg=t=>{const m=$('#bmsg');if(m){m.textContent=t;m.className=t&&t.startsWith('Error')?'no':'mu'}};
+ for(const f of [...files]){
+  if(!/\.pdf$/i.test(f.name)&&f.type!='application/pdf'){msg('Error: '+f.name+' is not a PDF.');continue}
+  try{ov('Reading '+f.name,0,'Finding chapters, questions and the answer key…');
+   const b=await parseBook(f,(p,n)=>ov('Reading '+f.name,p/n,'Page '+p+' of '+n));
+   const old=BOOKS.findIndex(x=>x.slug==b.slug);if(old>=0)BOOKS[old]=b;else BOOKS.push(b);
+   SEL.chs=new Set([...SEL.chs].filter(k=>BOOKS[+k.split(':')[0]]));msg('')}
+  catch(e){console.error(e);msg('Error: could not read '+f.name+' - '+(e&&e.message||e))}
+ }
+ ov(null);SEL.chs=new Set();rBooks();rSel()}
+function rmBook(i){BOOKS.splice(i,1);SEL.chs=new Set();SEL.bk=0;rBooks();rSel()}
+
+/* ---- step 3: choose questions ---- */
+function parseNums(s){const r=new Set();String(s).split(/[,;\s]+/).forEach(p=>{const m=p.trim().match(/^(\d+)(?:\s*[-–]\s*(\d+))?$/);if(m){const a=+m[1],b=+(m[2]||m[1]);for(let i=Math.min(a,b);i<=Math.max(a,b)&&i<5000;i++)r.add(i)}});return r}
+function sample(a,n){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a.slice(0,n)}
+function plan(){
+ const items=[],per=[];let hidden=0,missing=0;
+ const take=(bk,list,rule)=>{ /* list already in chapter/number order */
+  const before=list.length;list=list.filter(q=>FILT.has(st(bk,q.n)));hidden+=before-list.length;
+  if(rule=='first')list=list.slice(0,Math.max(1,CFG.n));
+  if(rule=='rand')list=sample(list,Math.max(1,CFG.n)).sort((a,b)=>a.n-b.n);
+  list.forEach(q=>items.push({bk,q}))};
+ if(CFG.mode=='ch'){
+  BOOKS.forEach((bk,bi)=>bk.chapters.forEach((c,ci)=>{if(!SEL.chs.has(bi+':'+ci))return;let l=c.qs;
+   if(CFG.rule=='range'){const a=Math.min(CFG.a,CFG.b),b=Math.max(CFG.a,CFG.b);l=l.filter((q,i)=>i+1>=a&&i+1<=b)}
+   take(bk,l,CFG.rule)}))}
+ else if(CFG.mode=='fo'){const seen=new Set(),tmp=[];
+  [...SEL.fo].forEach(fid=>savedKeys(fid).forEach(k=>{if(seen.has(k))return;seen.add(k);const m=qMeta(k);if(m.book&&m.q)tmp.push({bk:m.book,q:m.q});else missing++}));
+  tmp.sort((a,b)=>BOOKS.indexOf(a.bk)-BOOKS.indexOf(b.bk)||a.q.n-b.q.n);items.push(...tmp)}
+ else{const bk=BOOKS[SEL.bk];if(bk){
+  if(CFG.mode=='num'){const ns=parseNums(SEL.nums);take(bk,bk.qs.filter(q=>ns.has(q.n)),'all')}
+  else{const ps=parseNums(SEL.pages);take(bk,bk.qs.filter(q=>ps.has(q.segs[0].p)),'all')}}}
+ if(CFG.shuf){const by=new Map();items.forEach(x=>{if(!by.has(x.bk))by.set(x.bk,[]);by.get(x.bk).push(x)});items.length=0;BOOKS.forEach(b=>{if(by.has(b))items.push(...sample(by.get(b),1e9))})}
+ return{items,hidden,missing}}
+function rSel(){
+ const e=$('#cSel');
+ if(!BOOKS.length){e.innerHTML='<div class="card"><div class="steps"><span class="no1">3</span><h2>Choose questions</h2></div><small>Add a PDF in step 2 first.</small></div>';PL=null;return}
+ if(SEL.bk>=BOOKS.length)SEL.bk=0;
+ const bsel=BOOKS.length>1?`<label>Which book?</label><select onchange="SEL.bk=+this.value;refreshPlan()">${BOOKS.map((b,i)=>`<option value="${i}" ${i==SEL.bk?'selected':''}>${esc(b.subject)}</option>`).join('')}</select>`:'';
+ const tabs=[['ch','By chapters'],['num','By question numbers'],['pg','By pages'],['fo','From saved folders']].map(([k,t])=>`<button class="tab ${CFG.mode==k?'on':''}" onclick="CFG.mode='${k}';saveCfg();rSel()">${t}</button>`).join('');
+ let panel='';
+ if(CFG.mode=='ch'){
+  panel=BOOKS.map((b,bi)=>`<div class="bh"><b>${esc(b.subject)}</b><small>${b.qs.length} questions</small><span class="sp"></span><button class="sm" onclick="selAll(${bi},1)">Select all</button><button class="sm" onclick="selAll(${bi},0)">Clear</button></div>
+   <div class="chl">${b.chapters.map((c,ci)=>{const k=bi+':'+ci,n={new:0,skipped:0,wrong:0,correct:0};c.qs.forEach(q=>n[st(b,q.n)]++);const on=SEL.chs.has(k);
+    return`<label class="chr ${on?'on':''}" data-k="${k}"><input type="checkbox" ${on?'checked':''} onchange="togCh('${k}',this.checked,this.parentNode)"><span class="cn">${esc(c.name)}</span>${n.wrong?`<i class="b2 w">${n.wrong} wrong</i>`:''}${n.skipped?`<i class="b2 s">${n.skipped} skipped</i>`:''}${n.correct?`<i class="b2 c">${n.correct} done</i>`:''}<span class="cc"><b class="mc"></b>/${c.qs.length}</span></label>`}).join('')}</div>`).join('')+
+  `<div class="g4" style="margin-top:12px"><div><label>From each selected chapter take</label><select onchange="CFG.rule=this.value;saveCfg();rSel()">${[['all','All matching questions'],['first','First N questions'],['range','Questions a to b (position in chapter)'],['rand','Random N questions']].map(([v,t])=>`<option value="${v}" ${CFG.rule==v?'selected':''}>${t}</option>`).join('')}</select></div>
+   ${CFG.rule=='first'||CFG.rule=='rand'?`<div><label>N (per chapter)</label><input type="number" min="1" value="${CFG.n}" oninput="CFG.n=Math.max(1,+this.value||1);saveCfg();refreshPlan()"></div>`:''}
+   ${CFG.rule=='range'?`<div><label>From position a</label><input type="number" min="1" value="${CFG.a}" oninput="CFG.a=Math.max(1,+this.value||1);saveCfg();refreshPlan()"></div><div><label>To position b</label><input type="number" min="1" value="${CFG.b}" oninput="CFG.b=Math.max(1,+this.value||1);saveCfg();refreshPlan()"></div>`:''}</div>
+   <small>The number in each chapter box is how many questions pass your status filter below. "Range" counts positions inside the chapter (1 = its first question) before the status filter; "First N" and "Random N" pick from what passes the filter.</small>`}
+ else if(CFG.mode=='num')panel=`${bsel}<label>Question numbers as printed in the PDF <small>(e.g. 17-24, 40, 52-60)</small></label><input value="${esc(SEL.nums)}" placeholder="17-24" oninput="SEL.nums=this.value;refreshPlan()">`;
+ else if(CFG.mode=='fo')panel=foPanel();
+ else panel=`${bsel}<label>PDF page numbers <small>(e.g. 7-10 - questions that start on those pages)</small></label><input value="${esc(SEL.pages)}" placeholder="7-10" oninput="SEL.pages=this.value;refreshPlan()">`;
+ const tot={new:0,skipped:0,wrong:0,correct:0};BOOKS.forEach(b=>b.qs.forEach(q=>tot[st(b,q.n)]++));
+ const fc=(k,t,cl)=>`<label class="chk"><input type="checkbox" ${FILT.has(k)?'checked':''} onchange="togF('${k}',this.checked)"> <span class="${cl}">${t}</span> <small>(${tot[k]})</small></label>`;
+ e.innerHTML=`<div class="card"><div class="steps"><span class="no1">3</span><h2>Choose questions</h2></div><div class="tabs">${tabs}</div>${panel}
+  ${CFG.mode=='fo'?'':`<h3 style="margin-top:18px">Which questions may be included?</h3>
+  <div>${fc('new','New (never done)','')}${fc('skipped','Skipped / unanswered','sk')}${fc('wrong','Done wrong earlier','no')}${fc('correct','Done correct earlier','ok')}</div>
+  <div class="bar" style="margin-top:8px"><small>Quick pick:</small><button class="sm" onclick="presetF(['new','skipped'])">Fresh (new + skipped)</button><button class="sm" onclick="presetF(['wrong'])">Only wrong ones</button><button class="sm" onclick="presetF(['wrong','skipped'])">Wrong + skipped</button><button class="sm" onclick="presetF(['new','skipped','wrong','correct'])">Everything</button></div>`}
+  <div class="plan" id="plan"></div></div>
+ <div class="card"><div class="steps"><span class="no1">4</span><h2>Test settings</h2></div>
+  <label>Test name <small>(optional)</small></label><input id="tname" value="${esc(CFG.name)}" placeholder="Auto name from your selection" oninput="CFG.name=this.value;saveCfg()">
+  <div class="g4"><div><label>Timer</label><select onchange="CFG.tm=this.value;saveCfg();refreshPlan()"><option value="q" ${CFG.tm=='q'?'selected':''}>Minutes per question</option><option value="t" ${CFG.tm=='t'?'selected':''}>Total time (minutes)</option></select></div>
+   <div><label>Minutes</label><input type="number" step="0.5" min="0.5" value="${CFG.mins}" oninput="CFG.mins=+this.value||1;saveCfg();refreshPlan()"></div>
+   <div><label>Marks for correct</label><input type="number" value="${CFG.mp}" oninput="CFG.mp=+this.value||0;saveCfg();refreshPlan()"></div>
+   <div><label>Marks lost for wrong</label><input type="number" value="${CFG.mn}" oninput="CFG.mn=Math.abs(+this.value||0);saveCfg()"></div></div>
+  <div style="margin-top:10px"><label class="chk"><input type="checkbox" ${CFG.shuf?'checked':''} onchange="CFG.shuf=this.checked;saveCfg();refreshPlan()"> Shuffle question order</label><label class="chk"><input type="checkbox" ${CFG.auto?'checked':''} onchange="CFG.auto=this.checked;saveCfg()"> Auto-submit when time ends</label></div>
+  <p id="smsg" class="no" style="margin:8px 0 0"></p>
+  <div class="bar"><button class="pri" id="go" onclick="begin()" style="padding:11px 30px;font-weight:600">Start test</button></div></div>`;
+ refreshPlan()}
+function selAll(bi,on){BOOKS[bi].chapters.forEach((c,ci)=>on?SEL.chs.add(bi+':'+ci):SEL.chs.delete(bi+':'+ci));rSel()}
+function togCh(k,on,el){on?SEL.chs.add(k):SEL.chs.delete(k);el.classList.toggle('on',on);refreshPlan()}
+function togF(k,on){on?FILT.add(k):FILT.delete(k);CFG.filt=[...FILT];saveCfg();refreshPlan()}
+function presetF(a){FILT.clear();a.forEach(k=>FILT.add(k));CFG.filt=[...FILT];saveCfg();rSel()}
+const totalSecs=n=>(CFG.tm=='q'?CFG.mins*n:CFG.mins)*60;
+function autoName(items){
+ if(CFG.mode=='fo')return 'Saved - '+([...SEL.fo].map(folderName).filter(Boolean).join(' + ')||'folders');
+ const subs=[...new Set(items.map(x=>x.bk.subject))],chs=new Set(items.map(x=>x.bk.slug+x.q.ci));
+ return subs.join(' + ')+' - '+(chs.size==1?items[0].q.chn:chs.size+' chapters')}
+function refreshPlan(){
+ if(!BOOKS.length)return;
+ $$('.chr[data-k]').forEach(r=>{const[bi,ci]=r.dataset.k.split(':').map(Number),b=BOOKS[bi],c=b.chapters[ci];r.querySelector('.mc').textContent=c.qs.filter(q=>FILT.has(st(b,q.n))).length});
+ PL=plan();const n=PL.items.length,el=$('#plan');if(!el)return;
+ const by={};PL.items.forEach(x=>by[x.bk.subject]=(by[x.bk.subject]||0)+1);
+ let h;
+ if(!n){h=CFG.mode=='fo'?'<b>Nothing to practise.</b> Tick at least one folder that has questions (its PDF must be loaded too).':CFG.mode=='ch'&&!SEL.chs.size?'<b>Nothing selected yet.</b> Tick at least one chapter.':'<b>No questions match.</b> Check your selection and the "which questions may be included" boxes.'}
+ else h=`<b>${n} question${n>1?'s':''}</b> <span class="mu">(${Object.entries(by).map(([k,v])=>esc(k)+' '+v).join(' · ')})</span> · time <b>${fmt(totalSecs(n))}</b> · max marks <b>${n*CFG.mp}</b>`;
+ if(PL.missing)h+=`<br><small>${PL.missing} saved question(s) skipped because their PDF is not loaded.</small>`;
+ if(PL.hidden)h+=`<br><small>${PL.hidden} more question(s) in your selection are hidden by the status filter above.</small>`;
+ el.innerHTML=h;const g=$('#go');if(g)g.disabled=!n}
+
+/* ---- history ---- */
+function rHist(){
+ const e=$('#cHist');if(!e)return;const h=DB.hist.slice().reverse();
+ e.innerHTML=h.length?`<div class="card"><h3>Past tests</h3><div style="overflow-x:auto"><table><tr><th>Test</th><th>Date</th><th>Score</th><th>Right / Wrong / Skipped</th><th>Accuracy</th><th>Time</th></tr>${h.slice(0,60).map(x=>`<tr><td>${esc(x.name)}</td><td>${esc(x.date)}</td><td>${x.score}/${x.max}</td><td>${x.co} / ${x.wr} / ${x.un}</td><td>${x.acc}%</td><td>${fmt(x.time)}</td></tr>`).join('')}</table></div></div>`:''}
+
+/* =====================================================================
+   Starting a test
+   ===================================================================== */
+const smsg=t=>{const m=$('#smsg');if(m)m.textContent=t};
+async function begin(){
+ try{
+  PL=plan();if(!PL.items.length)return smsg('Nothing to start - select some questions.');
+  const items=PL.items;await launch(items,CFG.name.trim()||autoName(items))}
+ catch(e){ov(null);smsg('Error: '+(e&&e.message||e));console.error(e)}}
+async function launch(items,name){
+ const by=new Map();items.forEach(x=>{if(!x.bk.img.has(x.q.n)){if(!by.has(x.bk))by.set(x.bk,[]);by.get(x.bk).push(x.q)}});
+ let done=0;const total=[...by.values()].reduce((a,l)=>a+l.length,0);
+ for(const[bk,qs]of by){await renderBook(bk,qs,(f,s)=>ov('Preparing '+items.length+' questions…',(done+f*qs.length)/Math.max(1,total),bk.subject+' · '+s));done+=qs.length}
+ ov(null);
+ const q=items.map(x=>({bk:x.bk,qo:x.q,n:x.q.n,t:x.q.type||'S',a:x.q.ans||'',img:x.bk.img.get(x.q.n),ch:x.q.chn,src:x.q.src,sub:x.bk.subject})),n=q.length;
+ const secs=[];q.forEach((x,i)=>{let s=secs.find(z=>z.bk===x.bk);if(!s)secs.push(s={bk:x.bk,name:x.sub,idx:[]});s.idx.push(i)});
+ const ord=secs.flatMap(s=>s.idx);const q2=ord.map(i=>q[i]);const secs2=[];let k=0;secs.forEach(s=>{secs2.push({name:s.name,idx:s.idx.map(()=>k++)})});
+ const tot=totalSecs(n);
+ S={name,q:q2,secs:secs2,mp:CFG.mp,mn:Math.abs(CFG.mn),auto:CFG.auto,r:Array(n).fill(''),st:Array(n).fill(0),tm:Array(n).fill(0),cur:0,end:Date.now()+tot*1000,t0:Date.now(),tot,done:0};
+ S.st[0]=1;$('#tm').hidden=false;$('#tm').classList.remove('ot');$('#ttl').textContent=name;
+ iv=setInterval(()=>{const r=Math.ceil((S.end-Date.now())/1000),t=$('#tm');
+  if(r>0)t.textContent='Time Left : '+fmt(r);
+  else if(S.auto)finish();
+  else{t.textContent='Overtime : +'+fmt(-r);t.classList.add('ot')}},500);
+ exam()}
+
+/* =====================================================================
+   Exam
+   ===================================================================== */
+const TY={S:'Single correct',N:'Numerical'};
+function exam(){
+ A.className='wrap full';
+ const q=S.q[S.cur],r=S.r[S.cur],n=S.q.length,c=[0,1,2,3,4].map(k=>S.st.filter(x=>x==k).length),sec=S.secs.find(s=>s.idx.includes(S.cur));
+ let a;
+ if(q.t=='N')a=`<input id="num" readonly value="${esc(r)}" placeholder="Use numpad"><div class="key">${[7,8,9,'⌫',4,5,6,'C',1,2,3,'-',0,'.'].map(k=>`<button onclick="kp('${k}')">${k}</button>`).join('')}</div>`;
+ else a=`<div class="opts">${['1','2','3','4'].map(o=>`<button class="opt ${r==o?'on':''}" aria-pressed="${r==o}" onclick="pick('${o}')">${o}</button>`).join('')}</div>`;
+ const sh=(k,t)=>`<span class="sh s${k}">${c[k]}</span>${t}`,lg=(k,t)=>`<span>${sh(k,t)}</span>`;
+ A.innerHTML=`<div class="ex"><div class="mainp">
+ ${S.secs.length>1?`<div class="stabs">${S.secs.map(s=>`<button class="${s===sec?'on':''}" onclick="go(${s.idx[0]})">${esc(s.name)}</button>`).join('')}</div>`:''}
+ <div class="qinfo" style="margin-top:12px"><span>Question Type: <b>${TY[q.t]}</b></span><span>Marks for correct answer: <b class="ok">+${S.mp}</b> | Negative Marks: <b class="no">${S.mn}</b></span></div>
+ <div class="qno">Question No. ${S.cur+1} <small>of ${n}</small><button class="plus ${isSaved(q.bk.slug+'#'+q.n)?'on':''}" data-k="${q.bk.slug}#${q.n}" onclick="saveCur()" title="Save to a folder" aria-label="Save to a folder">+</button><span class="mu" style="font-weight:400;font-size:12px">Add to folder</span><span class="zb">Zoom <button onclick="zoom(-.15)" aria-label="Zoom out">A−</button><button onclick="zoom(.15)" aria-label="Zoom in">A+</button></span></div>
+ ${q.img?`<div class="qw"><img class="q" src="${q.img.url}" style="width:calc(${q.img.ptw}px*var(--z))" alt="Question ${S.cur+1}"></div>`:'<p class="no">This question could not be extracted from the PDF.</p>'}
+ <div class="ans"><b>${q.t=='N'?'Enter Answer:':'Select one option:'}</b>${a}</div></div>
+ <aside class="side"><div class="lg">${lg(2,' Answered')}${lg(1,' Not Answered')}${lg(0,' Not Visited')}${lg(3,' Marked for Review')}<span style="grid-column:span 2">${sh(4,' Answered & Marked for Review (will be evaluated)')}</span></div>
+ <div class="ch" style="margin-bottom:0">Choose a Question</div>
+ ${S.secs.map(s=>`<div class="sec">${esc(s.name)}</div><div class="pal">${s.idx.map(i=>`<button class="p s${S.st[i]} ${i==S.cur?'cur':''}" onclick="go(${i})">${i+1}</button>`).join('')}</div>`).join('')}
+ <div style="text-align:center;margin:18px 0 6px"><button class="subm" onclick="sub()">Submit</button></div>
+ <div style="text-align:center"><button class="sm" onclick="quit()" style="border:0;background:none;color:var(--mu);text-decoration:underline">Quit test without saving</button></div></aside></div>
+ <div class="foot"><div><button onclick="mark()">Mark for Review &amp; Next</button> <button onclick="clr()">Clear Response</button> <button onclick="go(Math.max(S.cur-1,0))">Back</button></div><button onclick="go(Math.min(S.cur+1,${n-1}))">Save &amp; Next</button></div>`;
+ scrollTo(0,0)}
+function zoom(d){CFG.z=Math.min(2.8,Math.max(.7,Math.round((CFG.z+d)*100)/100));saveCfg();document.documentElement.style.setProperty('--z',CFG.z)}
+const tick=()=>{S.tm[S.cur]+=(Date.now()-S.t0)/1000;S.t0=Date.now()};
+function go(i){tick();S.cur=i;if(!S.st[i])S.st[i]=1;exam()}
+function upd(){const i=S.cur,has=S.r[i]!=='',mk=S.st[i]>=3;S.st[i]=has?(mk?4:2):(mk?3:1);const y=scrollY;exam();scrollTo(0,y)}
+function pick(o){S.r[S.cur]=S.r[S.cur]==o?'':o;upd()}
+function kp(k){let r=S.r[S.cur];if(k=='C')r='';else if(k=='⌫')r=r.slice(0,-1);else if(k=='-'){r=r.startsWith('-')?r.slice(1):'-'+r}else if(k=='.'){if(!r.includes('.'))r+='.'}else if(r.length<12)r+=k;S.r[S.cur]=r;upd()}
+function clr(){const i=S.cur;S.r[i]='';S.st[i]=S.st[i]>=3?3:1;exam()}
+function mark(){const i=S.cur;S.st[i]=S.r[i]!==''?4:3;go(Math.min(i+1,S.q.length-1))}
+function sub(){tick();const at=S.r.filter(x=>x!=='').length;if(confirm('Attempted '+at+' of '+S.q.length+'. Unattempted: '+(S.q.length-at)+'. Submit now?'))finish()}
+function quit(){if(confirm('Quit this test? Nothing will be saved.'))setup()}
+addEventListener('keydown',e=>{
+ if(!S||S.done||e.ctrlKey||e.metaKey||e.altKey||$('#md'))return;const t=e.target&&e.target.tagName;if(t=='INPUT'||t=='TEXTAREA'||t=='SELECT')return;
+ const q=S.q[S.cur];
+ if(e.key=='ArrowRight'){go(Math.min(S.cur+1,S.q.length-1))}else if(e.key=='ArrowLeft'){go(Math.max(S.cur-1,0))}
+ else if(q.t=='S'&&/^[1-4]$/.test(e.key))pick(e.key);
+ else if(q.t=='N'){if(/^[0-9.]$/.test(e.key)||e.key=='-')kp(e.key);else if(e.key=='Backspace')kp('⌫');else if(e.key=='Delete')kp('C')}});
+addEventListener('beforeunload',e=>{if(pt)saveDB();if(S&&!S.done){e.preventDefault();e.returnValue=''}});
+
+/* =====================================================================
+   Result
+   ===================================================================== */
+function grade(q,r){
+ if(!q.a)return null;
+ if(q.t=='N'){const v=parseFloat(q.a),x=parseFloat(r);if(isNaN(v))return null;if(isNaN(x))return false;
+  const d=(q.a.split('.')[1]||'').length;return d?Math.abs(x-v)<=.5*Math.pow(10,-d)+1e-9:Math.abs(x-v)<1e-9}
+ return r==q.a}
+const show=(q,v)=>v===''||v==null?'-':v;
+function grp(R,fn){const m=new Map();R.forEach(x=>{const k=fn(x);if(!m.has(k))m.set(k,[]);m.get(k).push(x)});return[...m]}
+function finish(){
+ if(!S||S.done)return;S.done=1;clearInterval(iv);tick();$('#tm').hidden=true;
+ const R=S.q.map((q,i)=>{const r=S.r[i],att=r!=='',c=att?grade(q,r):null;
+  return{i,q,att,c,m:!att||c===null?0:c?S.mp:-S.mn,t:S.tm[i],s:!att||c===null?'sk':c?'ok':'no'}});
+ const sc=R.reduce((a,x)=>a+x.m,0),mx=S.q.length*S.mp,co=R.filter(x=>x.att&&x.c===true),wr=R.filter(x=>x.att&&x.c===false),un=R.filter(x=>!x.att),ug=R.filter(x=>x.att&&x.c===null);
+ const sum=a=>a.reduce((s,x)=>s+x.t,0),used=sum(R),acc=co.length+wr.length?Math.round(100*co.length/(co.length+wr.length)):0,avg=used/Math.max(1,R.length);
+ /* save progress */
+ const now=Date.now();
+ R.forEach(x=>{const b=DB.books[x.q.bk.slug]||(DB.books[x.q.bk.slug]={name:x.q.bk.name,q:{}}),old=b.q[x.q.n]||{};
+  b.q[x.q.n]={s:x.att&&x.c===true?'c':x.att&&x.c===false?'w':'u',a:(old.a||0)+1,w:(old.w||0)+(x.att&&x.c===false?1:0),t:Math.round(x.t),ts:now}});
+ DB.hist.push({id:now,ts:now,name:S.name,date:new Date().toLocaleString(),score:sc,max:mx,acc,time:Math.round(used),n:S.q.length,co:co.length,wr:wr.length,un:un.length+ug.length,
+  qs:R.map(x=>[x.q.bk.slug,x.q.n,S.r[x.i],x.q.a,Math.round(x.t),x.m])});
+ DB.hist=DB.hist.slice(-150);saveDB();setDirty(true);
+ /* analysis */
+ const max=Math.max(sum(co),sum(wr),sum(un),1),bar=(l,a,cl)=>`<div style="margin:6px 0">${l}: <b>${fmt(sum(a))}</b> <small>(avg ${a.length?fmt(sum(a)/a.length):'0:00'} over ${a.length})</small><br><span class="tb" style="background:${cl};width:${Math.max(2,sum(a)/max*100)}%"></span></div>`;
+ const sl=R.slice().sort((a,b)=>b.t-a.t).slice(0,5);
+ const stat=a=>{const c=a.filter(x=>x.att&&x.c===true).length,w=a.filter(x=>x.att&&x.c===false).length;return{n:a.length,c,w,u:a.length-c-w,m:a.reduce((s,x)=>s+x.m,0),t:sum(a),acc:c+w?Math.round(100*c/(c+w)):null}};
+ const tbl=(title,g)=>`<tr><th>${title}</th><th>Qs</th><th>Correct</th><th>Wrong</th><th>Skipped</th><th>Marks</th><th>Accuracy</th><th>Time</th></tr>`+g.map(([k,a])=>{const s=stat(a);return`<tr><td>${esc(k)}</td><td>${s.n}</td><td class="ok">${s.c}</td><td class="no">${s.w}</td><td class="sk">${s.u}</td><td>${s.m}</td><td>${s.acc==null?'-':`<span class="ab"><i style="width:${s.acc}%"></i></span> ${s.acc}%`}</td><td>${fmt(s.t)}</td></tr>`}).join('');
+ const rushed=wr.filter(x=>x.t<avg*.5).length,slowW=wr.filter(x=>x.t>avg*1.5).length,slowC=co.filter(x=>x.t>avg*2).length;
+ const ins=[];
+ if(co.length&&wr.length)ins.push(`Average time: <b>${fmt(sum(co)/co.length)}</b> on correct vs <b>${fmt(sum(wr)/wr.length)}</b> on wrong answers.`);
+ if(rushed)ins.push(`<b>${rushed}</b> wrong answer(s) took under half the average time - possible rushing or guessing.`);
+ if(slowW)ins.push(`<b>${slowW}</b> wrong answer(s) took over 1.5× the average - long time spent, still missed (revise these concepts).`);
+ if(slowC)ins.push(`<b>${slowC}</b> correct answer(s) took over 2× the average - right but slow; practise for speed.`);
+ const un0=un.filter(x=>x.t>5).length;if(un0)ins.push(`<b>${un0}</b> question(s) were opened for more than 5 s but left unanswered.`);
+ if(ug.length)ins.push(`${ug.length} attempted question(s) had no answer key and were not graded.`);
+ const multi=S.secs.length>1;
+ const gch=grp(R,x=>(multi?x.q.sub+' - ':'')+x.q.ch);
+ const lgd='<div class="lgd"><span><i style="background:var(--an)"></i>Correct</span><span><i style="background:var(--na)"></i>Wrong</span><span><i style="background:var(--nv)"></i>Skipped</span></div>';
+ const stk=g=>g.map(([k,a])=>{const s=stat(a),n=s.n||1;return`<div class="sb"><div class="sbn" title="${esc(k)}">${esc(k)}</div><div class="sbt"><i style="width:${s.c/n*100}%;background:var(--an)"></i><i style="width:${s.w/n*100}%;background:var(--na)"></i></div><div class="sbv">${s.c} / ${s.w} / ${s.u}</div></div>`}).join('');
+ A.className='wrap';scrollTo(0,0);$('#ttl').textContent='Result';
+ A.innerHTML=`<div id="cDirty"></div><div class="card"><h2 style="margin:0 0 10px">${esc(S.name)}</h2><div class="stats">
+ <div class="stat"><small>Score</small><b>${sc} / ${mx}</b></div><div class="stat"><small>Correct</small><b class="ok">${co.length}</b></div>
+ <div class="stat"><small>Incorrect</small><b class="no">${wr.length}</b></div><div class="stat"><small>Unattempted</small><b>${un.length}</b></div>
+ <div class="stat"><small>Accuracy</small><b>${acc}%</b></div><div class="stat"><small>Time used</small><b>${fmt(used)} / ${fmt(S.tot)}</b></div>
+ <div class="stat"><small>Avg per question</small><b>${fmt(avg)}</b></div></div>
+ <div class="bar"><button class="pri" onclick="setup()">New test</button>${wr.length+un.length?`<button onclick="retry()">Retry the ${wr.length+un.length} wrong / unattempted</button>`:''}<button onclick="dl()">Download progress file</button></div>
+ <small>Your results were saved in this browser. Download the progress file so the app remembers them next time on any device.</small></div>
+ <div class="g2"><div class="card"><h3>Result split</h3><div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">${gDonut(co.length,wr.length,un.length+ug.length,acc+'%')}<div style="line-height:1.9"><span class="ok">● Correct ${co.length}</span><br><span class="no">● Incorrect ${wr.length}</span><br><span class="sk">● Unattempted ${un.length+ug.length}</span><br><small>Marks: +${co.length*S.mp} − ${wr.length*S.mn} = <b>${sc}</b></small></div></div></div>
+ <div class="card"><h3>Score trend <small>(last tests)</small></h3>${gTrend(DB.hist)}</div></div>
+ <div class="card"><h3>Time per question</h3><div class="chart">${gTime(R,avg)}</div><div class="lgd"><span><i style="background:var(--an)"></i>Correct</span><span><i style="background:var(--na)"></i>Wrong</span><span><i style="background:var(--mu)"></i>Unattempted</span><span>- - - average ${fmt(avg)}</span></div></div>
+ <div class="g2"><div class="card"><h3>Time by result</h3>${bar('Correct',co,'var(--an)')}${bar('Incorrect',wr,'var(--na)')}${bar('Unattempted',un,'var(--mu)')}</div>
+ <div class="card"><h3>Slowest questions</h3>${sl.map(x=>`Q${x.i+1}: <b>${fmt(x.t)}</b> <span class="${x.s}">${x.att?(x.c===null?'ungraded':x.c?'correct':'incorrect'):'unattempted'}</span><br>`).join('')}</div></div>
+ ${ins.length?`<div class="card"><h3>What the timing says</h3><ul class="ins">${ins.map(i=>`<li>${i}</li>`).join('')}</ul></div>`:''}
+ <div class="card"><h3>Chapter-wise</h3>${stk(gch)}${lgd}<div style="overflow-x:auto;margin-top:12px"><table>${tbl('Chapter',gch)}</table></div>${multi?`<h3 style="margin-top:16px">Subject-wise</h3><div style="overflow-x:auto"><table>${tbl('Subject',grp(R,x=>x.q.sub))}</table></div>`:''}</div>
+ <div class="card"><h3 style="margin-top:0">Review <small>(click a row to see the question)</small></h3><div class="bar" style="margin:0 0 8px"><button onclick="fl('')">All</button><button onclick="fl('ok')">Correct</button><button onclick="fl('no')">Incorrect</button><button onclick="fl('sk')">Unattempted</button></div>
+ <div style="overflow-x:auto"><table><tr><th>Q</th><th>Chapter</th><th>Source</th><th>Type</th><th>Your answer</th><th>Correct</th><th>Result</th><th>Marks</th><th>Time</th><th>Save</th></tr>
+ ${R.map(x=>{const q=x.q;return`<tr class="r ${x.s}f" onclick="this.nextElementSibling.hidden=!this.nextElementSibling.hidden"><td>${x.i+1}</td><td>${esc(q.ch)}</td><td><small>${esc(q.src)}</small></td><td>${q.t}</td><td>${esc(show(q,S.r[x.i]))}</td><td>${q.a?esc(q.a):'?'}</td><td class="${x.s}">${x.att?(x.c===null?'Ungraded':x.c?'Correct':'Incorrect'):'Unattempted'}</td><td>${x.m}</td><td>${fmt(x.t)}</td><td><button class="plus ${isSaved(q.bk.slug+'#'+q.n)?'on':''}" data-k="${q.bk.slug}#${q.n}" onclick="event.stopPropagation();saveRev(${x.i})" title="Save to a folder" aria-label="Save to a folder">+</button></td></tr><tr hidden class="${x.s}f"><td colspan="10">${q.img?`<img class="q" style="width:calc(${q.img.ptw}px*var(--z))" src="${q.img.url}" alt="">`:'(image not available)'}</td></tr>`}).join('')}</table></div></div>
+ <div class="pgfoot">Made by DIVYANSH</div>`;
+ rDirty()}
+function fl(c){document.querySelectorAll('tr.r').forEach(r=>{const m=!c||r.classList.contains(c+'f'),n=r.nextElementSibling;r.style.display=m?'':'none';n.hidden=true;n.style.display=m?'':'none'})}
+async function retry(){
+ const items=[];S.q.forEach((q,i)=>{const r=S.r[i],c=r!==''?grade(q,r):null;if(r===''||c===false)items.push({bk:q.bk,q:q.qo})});
+ if(!items.length)return;try{await launch(items,'Retry - '+S.name)}catch(e){ov(null);alert('Error: '+(e&&e.message||e))}}
+
+/* =====================================================================
+   Charts (inline SVG, no libraries)
+   ===================================================================== */
+function gDonut(co,wr,un,label){
+ const t=co+wr+un||1,r=52,C=2*Math.PI*r;let off=0;
+ const arc=(v,c)=>{if(!v)return'';const l=v/t*C,x=`<circle cx="70" cy="70" r="${r}" fill="none" stroke="${c}" stroke-width="22" stroke-dasharray="${l} ${C-l}" stroke-dashoffset="${-off}" transform="rotate(-90 70 70)"/>`;off+=l;return x};
+ return`<svg viewBox="0 0 140 140" width="160" height="160" role="img" aria-label="Result split"><circle cx="70" cy="70" r="${r}" fill="none" stroke="var(--nv)" stroke-width="22"/>${arc(co,'var(--an)')}${arc(wr,'var(--na)')}${arc(un,'var(--mu)')}<text x="70" y="69" text-anchor="middle" font-size="24" font-weight="700" fill="currentColor">${label}</text><text x="70" y="86" text-anchor="middle" font-size="10" fill="var(--mu)">accuracy</text></svg>`}
+function gTime(R,avg){
+ const n=R.length,bw=14,gap=5,L=40,Bm=24,H=180,W=Math.max(520,n*(bw+gap)+L+12),mx=Math.max(1,...R.map(x=>x.t)),ph=H-Bm-14,y=t=>H-Bm-(t/mx)*ph,step=n>40?5:n>20?2:1;
+ const col=x=>x.s=='ok'?'var(--an)':x.att&&x.c===false?'var(--na)':'var(--mu)';
+ let g=`<line x1="${L}" y1="${y(0)}" x2="${W-6}" y2="${y(0)}" stroke="var(--bd)"/><text x="${L-6}" y="${y(0)+4}" text-anchor="end" font-size="10" fill="var(--mu)">0</text><text x="${L-6}" y="${y(mx)+4}" text-anchor="end" font-size="10" fill="var(--mu)">${fmt(mx)}</text>`;
+ R.forEach((x,i)=>{const h=Math.max(1.5,y(0)-y(x.t)),bx=L+i*(bw+gap)+gap;
+  g+=`<rect x="${bx}" y="${y(0)-h}" width="${bw}" height="${h}" rx="2" fill="${col(x)}"><title>Q${i+1}: ${fmt(x.t)} - ${x.att?(x.c===null?'ungraded':x.c?'correct':'incorrect'):'unattempted'}</title></rect>`;
+  if(i%step==0)g+=`<text x="${bx+bw/2}" y="${H-8}" text-anchor="middle" font-size="9" fill="var(--mu)">${i+1}</text>`});
+ g+=`<line x1="${L}" y1="${y(avg)}" x2="${W-6}" y2="${y(avg)}" stroke="var(--pr)" stroke-dasharray="5 4" stroke-width="1.5"/>`;
+ return`<svg viewBox="0 0 ${W} ${H}" style="width:100%;min-width:${W}px;max-width:${Math.round(W*1.8)}px;height:auto" role="img" aria-label="Time per question">${g}</svg>`}
+function gTrend(h){
+ const a=h.slice(-12);if(a.length<2)return'<p class="mu" style="margin:6px 0 0">Take at least two tests to see your trend here.</p>';
+ const W=420,H=175,L=34,Rr=12,T=12,B=26,pts=a.map(x=>x.max?Math.round(100*x.score/x.max):0),acc=a.map(x=>x.acc||0),lo=Math.min(0,...pts),hi=100;
+ const X=i=>L+i*(W-L-Rr)/(a.length-1),Y=v=>T+(hi-v)/(hi-lo)*(H-T-B);
+ const line=(vs,c,nm)=>`<polyline fill="none" stroke="${c}" stroke-width="2.5" points="${vs.map((v,i)=>X(i)+','+Y(v)).join(' ')}"/>`+vs.map((v,i)=>`<circle cx="${X(i)}" cy="${Y(v)}" r="3.5" fill="${c}"><title>${esc(a[i].name)} - ${nm}: ${v}%</title></circle>`).join('');
+ let g='';[0,50,100].forEach(v=>{g+=`<line x1="${L}" y1="${Y(v)}" x2="${W-Rr}" y2="${Y(v)}" stroke="var(--bd)"/><text x="${L-5}" y="${Y(v)+3}" text-anchor="end" font-size="10" fill="var(--mu)">${v}%</text>`});
+ a.forEach((_,i)=>{g+=`<text x="${X(i)}" y="${H-8}" text-anchor="middle" font-size="9" fill="var(--mu)">${i+1}</text>`});
+ return`<div class="chart"><svg viewBox="0 0 ${W} ${H}" style="width:100%;min-width:300px;max-width:560px;height:auto" role="img" aria-label="Score trend">${g}${line(acc,'var(--an)','accuracy')}${line(pts,'var(--pr)','score')}</svg></div><div class="lgd"><span><i style="background:var(--pr)"></i>Score % of max</span><span><i style="background:var(--an)"></i>Accuracy %</span></div>`}
+
+/* =====================================================================
+   Folders (saved questions)
+   ===================================================================== */
+let pt=null;
+function persist(){setDirty(true);clearTimeout(pt);pt=setTimeout(()=>{pt=null;saveDB()},300);rDirty()}
+const uid=()=>'f'+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+const activeFolders=()=>Object.entries(DB.folders).filter(([,f])=>!f.del).sort((a,b)=>(a[1].c||0)-(b[1].c||0)).map(([id,f])=>({id,name:f.name}));
+const folderName=id=>DB.folders[id]&&!DB.folders[id].del?DB.folders[id].name:null;
+const itFolders=it=>(it&&it.f||[]).filter(folderName);
+const isSaved=k=>itFolders(DB.sv[k]).length>0;
+const splitK=k=>{const i=k.lastIndexOf('#');return{slug:k.slice(0,i),n:+k.slice(i+1)}};
+const bIdx=s=>{const i=BOOKS.findIndex(b=>b.slug==s);return i<0?99:i};
+function qMeta(k){const{slug,n}=splitK(k),book=BOOKS.find(b=>b.slug==slug)||null,q=book?book.byNum.get(n)||null:null;
+ return{k,slug,n,book,q,subject:book?book.subject:((DB.books[slug]&&DB.books[slug].name)||slug)}}
+function savedKeys(fid){return Object.keys(DB.sv).filter(k=>{const f=itFolders(DB.sv[k]);return fid&&fid!=='all'?f.includes(fid):f.length>0}).sort((a,b)=>{const x=splitK(a),y=splitK(b);return bIdx(x.slug)-bIdx(y.slug)||x.slug.localeCompare(y.slug)||x.n-y.n})}
+function mkFolder(name){name=(name||'').trim().slice(0,60);if(!name)return null;
+ const ex=Object.entries(DB.folders).find(([,f])=>!f.del&&f.name.toLowerCase()==name.toLowerCase());if(ex)return ex[0];
+ const id=uid();DB.folders[id]={name,c:Date.now(),ts:Date.now()};persist();return id}
+const item=k=>DB.sv[k]||(DB.sv[k]={f:[],note:'',fn:{},ts:0});
+function setFolder(k,fid,on){const it=item(k),has=it.f.includes(fid);if(on&&!has)it.f.push(fid);if(!on&&has)it.f=it.f.filter(x=>x!=fid);it.ts=Date.now();persist()}
+function setNote(k,scope,text){const it=item(k);if(scope=='all')it.note=text;else{it.fn=it.fn||{};it.fn[scope]=text}it.ts=Date.now();persist()}
+function renameFolder(fid){const f=DB.folders[fid];if(!f)return;const n=prompt('Folder name',f.name);if(n&&n.trim()){f.name=n.trim().slice(0,60);f.ts=Date.now();persist()}}
+function deleteFolder(fid){const f=DB.folders[fid];if(!f)return false;
+ if(!confirm('Delete folder "'+f.name+'"? The questions stay in your other folders; notes written only for this folder are lost.'))return false;
+ f.del=true;f.ts=Date.now();Object.values(DB.sv).forEach(it=>{if(it.f.includes(fid)){it.f=it.f.filter(x=>x!=fid);if(it.fn)delete it.fn[fid];it.ts=Date.now()}});persist();return true}
+const refreshPlus=()=>$$('.plus[data-k]').forEach(b=>b.classList.toggle('on',isSaved(b.dataset.k)));
+const saveCur=()=>{const q=S.q[S.cur];openSave(q.bk.slug,q.n,q.sub+' Q'+q.n,refreshPlus)};
+const saveRev=i=>{const q=S.q[i];openSave(q.bk.slug,q.n,q.sub+' Q'+q.n,refreshPlus)};
+
+/* ---- the "add to folder" popup ---- */
+let MD=null;
+function openSave(slug,n,label,cb){MD={k:slug+'#'+n,label,scope:'all',adding:false,cb};renderMd()}
+function closeMd(){const m=$('#md');if(m)m.remove();const cb=MD&&MD.cb;MD=null;if(cb)cb()}
+function renderMd(){
+ let m=$('#md');if(!m){m=document.createElement('div');m.id='md';m.onclick=closeMd;document.body.appendChild(m)}
+ const it=DB.sv[MD.k]||{f:[],note:'',fn:{}},mine=new Set(itFolders(it)),fs=activeFolders();
+ if(MD.scope!='all'&&!mine.has(MD.scope))MD.scope='all';
+ const note=MD.scope=='all'?(it.note||''):((it.fn||{})[MD.scope]||'');
+ m.innerHTML=`<div class="mbox" role="dialog" aria-label="Save to folder" onclick="event.stopPropagation()">
+  <div class="mh"><b>Save to folder</b><span class="mu">${esc(MD.label)}</span><span class="sp"></span><button class="sm pri" onclick="closeMd()">Done</button></div>
+  <div class="mfl">${fs.length?fs.map(f=>`<label class="chk mrow"><input type="checkbox" ${mine.has(f.id)?'checked':''} onchange="mdTog('${f.id}',this.checked)"> ${esc(f.name)}</label>`).join(''):'<p class="mu" style="margin:8px 0">No folders yet - add your first one below.</p>'}</div>
+  ${MD.adding?`<div class="bar" style="margin:8px 0 0"><input id="nf" placeholder="Folder name" maxlength="60" onkeydown="if(event.key=='Enter')mdAdd()"><button class="pri" onclick="mdAdd()">Add</button></div>`:`<button class="sm" style="margin-top:8px" onclick="MD.adding=true;renderMd()">＋ Add new folder</button>`}
+  <label>Note <small>(optional)</small></label>
+  <select onchange="MD.scope=this.value;renderMd()"><option value="all" ${MD.scope=='all'?'selected':''}>For all folders</option>${fs.filter(f=>mine.has(f.id)).map(f=>`<option value="${f.id}" ${MD.scope==f.id?'selected':''}>Only for "${esc(f.name)}"</option>`).join('')}</select>
+  <textarea id="mnote" rows="3" style="margin-top:6px" placeholder="Write a note - the trick, your mistake, why it is a good question…" oninput="setNote(MD.k,MD.scope,this.value)">${esc(note)}</textarea></div>`;
+ const nf=$('#nf');if(nf)nf.focus()}
+function mdTog(fid,on){setFolder(MD.k,fid,on);renderMd()}
+function mdAdd(){const id=mkFolder($('#nf').value);MD.adding=false;if(id)setFolder(MD.k,id,true);renderMd()}
+addEventListener('keydown',e=>{if(e.key=='Escape'&&MD)closeMd()});
+
+/* ---- home-screen card ---- */
+function rSaved(){const e=$('#cSaved');if(!e)return;const fs=activeFolders(),n=savedKeys('all').length;
+ e.innerHTML=`<div class="card" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap"><div style="flex:1;min-width:200px"><h2 style="margin:0">★ Saved questions</h2><small>${n?n+' question'+(n==1?'':'s')+' in '+fs.length+' folder'+(fs.length==1?'':'s')+'. Open them, read your notes, or practise a folder.':'Save good questions into your own folders with the ⊕ button during a test.'}</small></div><button class="pri" onclick="showSaved()">Open saved questions</button></div>`}
+
+/* ---- saved questions screens ---- */
+let SV={fid:null,shown:0,q:'',keys:[]},SVQ=Promise.resolve();
+function showSaved(fid){SV={fid:fid||null,shown:0,q:'',keys:[]};A.className='wrap';$('#ttl').textContent='Saved questions';scrollTo(0,0);SV.fid?svFolder():svFolders()}
+function svFolders(){
+ const fs=activeFolders(),total=savedKeys('all').length;
+ A.innerHTML=`<div class="bar" style="margin:0 0 10px"><button onclick="setup()">← Back</button></div>
+ <div class="card"><h2>★ Saved questions</h2><small>Your folders. Open one to see its questions and notes, or practise it as a test. A question saved in two folders is counted once.</small>
+  <div class="frow"><div class="fn"><b>All saved questions</b> <small>${total} unique</small></div><button onclick="showSaved('all')">Open</button><button class="pri" onclick="practiceFolders(null)" ${total?'':'disabled'}>Practice</button></div>
+  ${fs.map(f=>{const c=savedKeys(f.id).length;return`<div class="frow"><label class="fn" style="margin:0;font-weight:400"><input type="checkbox" class="fck" value="${f.id}"> <b>${esc(f.name)}</b> <small>${c} question${c==1?'':'s'}</small></label><button onclick="showSaved('${f.id}')">Open</button><button class="pri" onclick="practiceFolders(['${f.id}'])" ${c?'':'disabled'}>Practice</button><button onclick="svRename('${f.id}')">Rename</button><button onclick="svDelete('${f.id}')">Delete</button></div>`}).join('')}
+  <div class="bar"><input id="nfn" placeholder="New folder name" maxlength="60" style="max-width:260px" onkeydown="if(event.key=='Enter')svAdd()"><button onclick="svAdd()">＋ Add folder</button><span class="sp"></span><button class="pri" onclick="practiceChecked()">Practice ticked folders (duplicates removed)</button></div>
+  ${fs.length?'':'<p class="mu">No folders yet. During a test (or in the results review) click the ⊕ button on a question to create one, or add one here.</p>'}</div>
+ <div class="pgfoot">Made by DIVYANSH</div>`}
+const svAdd=()=>{mkFolder($('#nfn').value);svFolders()};
+const svRename=id=>{renameFolder(id);svFolders()};
+const svDelete=id=>{if(deleteFolder(id))svFolders()};
+function practiceFolders(ids){SEL.fo=new Set(ids||activeFolders().map(f=>f.id));CFG.mode='fo';saveCfg();setup();setTimeout(()=>{const e=$('#cSel');if(e)e.scrollIntoView()},60)}
+function practiceChecked(){const ids=$$('.fck:checked').map(x=>x.value);if(!ids.length)return alert('Tick at least one folder first.');practiceFolders(ids)}
+function foPanel(){const fs=activeFolders();
+ return fs.length?`<div class="chl">${fs.map(f=>`<label class="chr ${SEL.fo.has(f.id)?'on':''}"><input type="checkbox" ${SEL.fo.has(f.id)?'checked':''} onchange="togFo('${f.id}',this.checked,this.parentNode)"><span class="cn">${esc(f.name)}</span><span class="cc"><b>${savedKeys(f.id).length}</b> questions</span></label>`).join('')}</div><small>A question saved in two folders is included only once. The status filter does not apply to folders.</small>`
+ :'<p class="mu">No folders yet. During a test click the ⊕ button on a question to save it into a folder; the folders then appear here.</p>'}
+function togFo(id,on,el){on?SEL.fo.add(id):SEL.fo.delete(id);el.classList.toggle('on',on);refreshPlan()}
+
+function svFolder(){
+ const fid=SV.fid,all=fid=='all';if(!all&&!folderName(fid))return showSaved();
+ A.innerHTML=`<div class="bar" style="margin:0 0 10px"><button onclick="showSaved()">← Folders</button></div>
+ <div class="card"><div class="bar" style="margin:0"><h2 style="margin:0">${all?'★ All saved questions':'Folder: '+esc(folderName(fid))}</h2><small id="svc"></small><span class="sp"></span><button class="pri" onclick="practiceFolders(${all?'null':`['${fid}']`})">Practice ${all?'all':'this folder'}</button></div>
+ <input id="svq" placeholder="Search notes, chapter, question number…" value="${esc(SV.q)}" style="margin-top:10px" oninput="SV.q=this.value;svList()"></div>
+ <div id="svl"></div><div class="bar" style="justify-content:center"><button id="svm" onclick="svMore(20)">Show more</button></div><div class="pgfoot">Made by DIVYANSH</div>`;
+ svList()}
+function svFiltered(){const q=SV.q.trim().toLowerCase(),ks=savedKeys(SV.fid);if(!q)return ks;
+ return ks.filter(k=>{const m=qMeta(k),it=DB.sv[k];return[it.note,...Object.values(it.fn||{}),m.q&&m.q.chn,m.q&&m.q.src,m.subject,'q'+m.n,String(m.n)].join(' ').toLowerCase().includes(q)})}
+function svList(keep){
+ const box=$('#svl');if(!box)return;const n=keep?Math.max(SV.shown,20):20;
+ SV.keys=svFiltered();SV.shown=0;box.innerHTML='';
+ $('#svc').textContent=SV.keys.length+' question'+(SV.keys.length==1?'':'s');
+ if(!SV.keys.length){box.innerHTML='<div class="card mu">Nothing here yet. Save questions with the ⊕ button during a test or in the results review.</div>';$('#svm').hidden=true;return}
+ svMore(n)}
+function svMore(cnt){
+ const box=$('#svl'),from=SV.shown,to=Math.min(SV.keys.length,from+cnt),part=SV.keys.slice(from,to);
+ box.insertAdjacentHTML('beforeend',part.map(svCard).join(''));SV.shown=to;$('#svm').hidden=to>=SV.keys.length;svImgs(part)}
+function svCard(k){
+ const m=qMeta(k),it=DB.sv[k],fids=itFolders(it),names=fids.map(folderName),all=SV.fid=='all',q=m.q,rec=DB.books[m.slug]&&DB.books[m.slug].q[m.n],fn=it.fn||{};
+ const stt=!rec?['','New']:rec.s=='c'?['c','Done ✓']:rec.s=='w'?['w','Wrong earlier']:['s','Skipped'];
+ const badge=fids.length>1?`<i class="b2 st">${'★'.repeat(Math.min(fids.length,5))} In ${fids.length} folders: ${esc(names.join(', '))}</i>`:(all&&names.length?`<i class="b2">${esc(names[0])}</i>`:'');
+ const fnote=!all?`<label>Note for this folder only</label><textarea rows="2" data-k="${esc(k)}" data-s="${esc(SV.fid)}" oninput="setNote(this.dataset.k,this.dataset.s,this.value)" placeholder="Only shown in this folder">${esc(fn[SV.fid]||'')}</textarea>`
+  :(fids.some(f=>fn[f])?'<label>Folder notes</label>'+fids.filter(f=>fn[f]).map(f=>`<div class="fnr"><b>${esc(folderName(f))}:</b> ${esc(fn[f])}</div>`).join(''):'');
+ return`<div class="card sq" data-k="${esc(k)}"><div class="sqh"><b>${esc(m.subject)} · Q${m.n}</b><small>${q?esc(q.chn)+' · '+esc(q.src):'PDF not loaded'}</small><i class="b2 ${stt[0]}">${stt[1]}</i>${badge}<span class="sp"></span><button class="sm" onclick="svSave('${esc(k)}')">Folders…</button>${all?'':`<button class="sm" onclick="svRemove('${esc(k)}')">Remove from folder</button>`}</div>
+ <div class="qw sqi">${q?'<small class="mu">Loading question…</small>':'<p class="mu">Add this book\'s PDF (step 2 on the home screen) to see the question.</p>'}</div>
+ ${q?`<div class="bar" style="margin:6px 0"><button class="sm" onclick="this.nextElementSibling.hidden=false;this.hidden=true">Show answer</button><span hidden><b>Answer:</b> ${q.ans?esc(q.type=='S'?'('+q.ans+')':q.ans):'?'}</span></div>`:''}
+ <label>Note for all folders</label><textarea rows="2" data-k="${esc(k)}" data-s="all" oninput="setNote(this.dataset.k,this.dataset.s,this.value)" placeholder="Write your note…">${esc(it.note||'')}</textarea>${fnote}</div>`}
+const svSave=k=>{const m=qMeta(k);openSave(m.slug,m.n,m.subject+' Q'+m.n,()=>svList(true))};
+const svRemove=k=>{setFolder(k,SV.fid,false);svList(true)};
+function svImgs(keys){SVQ=SVQ.then(()=>svImgs0(keys)).catch(e=>console.error(e))}
+async function svImgs0(keys){
+ const fill=k=>{const el=$$('.sq').find(e=>e.dataset.k===k);if(!el)return;const m=qMeta(k);if(!m.book||!m.book.img.has(m.n))return;const im=m.book.img.get(m.n);
+  el.querySelector('.sqi').innerHTML=im?`<img class="q" style="width:calc(${im.ptw}px*var(--z))" src="${im.url}" alt="">`:'<p class="no">Could not extract this question.</p>'};
+ const need=new Map();
+ keys.forEach(k=>{const m=qMeta(k);if(!m.book||!m.q)return;if(m.book.img.has(m.n))fill(k);else{if(!need.has(m.book))need.set(m.book,[]);need.get(m.book).push(m)}});
+ for(const[bk,ms]of need)for(let i=0;i<ms.length;i+=6){const ch=ms.slice(i,i+6);
+  if(!ch.some(m=>$$('.sq').some(e=>e.dataset.k===m.k)))continue;
+  try{await renderBook(bk,ch.map(m=>m.q),()=>{})}catch(e){console.error(e)}
+  ch.forEach(m=>fill(m.k))}}
+
+/* =====================================================================
+   Auto-load the PDFs that sit in the website's  pdfs/  folder
+   ===================================================================== */
+const BOOK_FILES=['pdfs/mathematics.pdf','pdfs/chemistry.pdf','pdfs/physics.pdf'];
+async function autoLoad(){
+ let any=false;const errs=[];
+ for(let i=0;i<BOOK_FILES.length;i++){const u=BOOK_FILES[i],nm=u.split('/').pop();
+  try{
+   const r=await fetch(u,{cache:'no-cache'});if(!r.ok)continue;
+   const buf=await r.arrayBuffer();if(String.fromCharCode(...new Uint8Array(buf.slice(0,5)))!=='%PDF-')continue;
+   ov('Loading your books…',i/BOOK_FILES.length,nm);
+   const b=await parseBook(new File([buf],nm),(p,n)=>ov('Loading '+nm,(i+p/n)/BOOK_FILES.length,'Page '+p+' of '+n));
+   b.auto=true;const old=BOOKS.findIndex(x=>x.slug==b.slug);if(old>=0)BOOKS[old]=b;else BOOKS.push(b);any=true}
+  catch(e){console.error(e);errs.push(nm+': '+(e&&e.message||e))}}
+ ov(null);
+ if((any||errs.length)&&$('#cBooks')){SEL.chs=new Set();rBooks();rSel();rSaved();
+  if(errs.length){const m=$('#bmsg');if(m){m.textContent='Error: '+errs.join(' | ');m.className='no'}}}}
+
+window.addEventListener('unhandledrejection',e=>{ov(null);smsg('Error: '+(e.reason&&e.reason.message||e.reason))});
+setup();autoLoad();
+</script></body></html>
