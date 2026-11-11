@@ -105,6 +105,74 @@ textarea{resize:vertical}
 .sb{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:13px}.sbn{width:34%;min-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sbt{flex:1;display:flex;height:14px;border-radius:4px;overflow:hidden;background:var(--nv)}.sbt i{display:block;height:100%}.sbv{width:74px;text-align:right;color:var(--mu);font-size:12px}
 .lgd{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--mu);margin-top:6px}.lgd i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
 .chart{overflow-x:auto}.chart svg{display:block;color:var(--tx)}
+
+/* ---------- results dashboard (v2) ---------- */
+.hero{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+.hl{flex:none;display:grid;place-items:center;margin:0 auto}
+.hr{flex:1;min-width:280px}
+.hero h2{margin:0 0 2px;font-size:20px;line-height:1.3}
+.verdict{font-size:23px;font-weight:700;margin:2px 0 0;line-height:1.25}
+.ring{width:156px;height:156px;display:block;color:var(--tx)}
+.ring .trk{stroke:var(--nv)}
+.ring .pg{transition:stroke-dashoffset 1.1s cubic-bezier(.2,.7,.2,1)}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:8px;margin-top:12px}
+.kp div{background:var(--bt);border-radius:8px;padding:8px 11px}.kp small{display:block}.kp b{font-size:19px}.kp b small{display:inline;font-weight:400}
+.rtabs{display:flex;gap:6px;margin:0 0 14px;flex-wrap:wrap;position:sticky;top:46px;z-index:3;background:var(--bg);padding:8px 0}
+.rtabs button{border-radius:99px;padding:7px 20px;font-weight:600}
+.rtabs button.on{background:var(--pr);border-color:var(--pr);color:#fff}
+.rt[hidden]{display:none}
+.rt h3 small{font-weight:400}
+.igr{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:10px}
+.ic{border:1px solid var(--bd);border-left:5px solid var(--c);border-radius:8px;padding:10px 13px;background:var(--cd)}
+.ic b{display:block;margin-bottom:2px}
+.ic span{font-size:14px;color:var(--mu)}.ic span b{display:inline;color:var(--tx)}
+.ic.na{--c:var(--na)}.ic.wa{--c:var(--wa)}.ic.an{--c:var(--an)}.ic.pr{--c:var(--pr)}
+.mb{display:grid;grid-template-columns:minmax(110px,175px) 1fr 72px;gap:10px;align-items:center;margin:7px 0;font-size:14px}
+.mb .tr{height:16px;border-radius:5px;background:var(--nv);overflow:hidden}
+.mb .tr i{display:block;height:100%;min-width:0}
+.mb .v{text-align:right;font-weight:700}
+.mb.w{grid-template-columns:minmax(96px,150px) 1fr 62px}
+.mb small{display:block;line-height:1.25}
+.mnote{margin:10px 0 0;font-size:13px}
+.qmap{display:grid;grid-template-columns:repeat(auto-fill,minmax(42px,1fr));gap:6px}
+.qt{position:relative;height:40px;padding:0;border:0;border-radius:6px;font-weight:700;font-size:13px}
+.qt.ok,.qt.no,.qt.sk{color:#fff}
+.qt.ok{background:var(--an)}.qt.no{background:var(--na)}.qt.sk{background:var(--mu)}
+.qt::after{content:"";position:absolute;left:5px;right:5px;bottom:3px;height:3px;border-radius:2px;background:rgba(255,255,255,.92);transform-origin:left;transform:scaleX(var(--h,0))}
+.qt:hover{filter:brightness(1.12);border:0}
+.cv{overflow-x:auto;color:var(--tx)}.cv svg{display:block}
+.cv .gl{stroke:var(--bd);stroke-width:1}
+.cv .gt{fill:var(--mu);font-size:11px}
+.cv .rl{fill:var(--tx);font-size:12px}
+.cv .f-ok{fill:var(--an)}.cv .f-no{fill:var(--na)}.cv .f-sk{fill:var(--mu)}
+.cv rect[onclick]:hover{opacity:.78}
+.cv .la{stroke:var(--pr);stroke-width:1.6;stroke-dasharray:6 4;fill:none}
+.cv .lb{stroke:var(--wa);stroke-width:2;stroke-dasharray:2 4;fill:none}
+.lgd .ln{display:inline-block;width:18px;height:0;border-top:2px dashed var(--pr);margin-right:5px;vertical-align:3px}
+.lgd .ln.b{border-top:2px dotted var(--wa)}
+.tg{display:inline-block;font-size:12px;font-weight:600;padding:1px 9px;border-radius:99px;white-space:nowrap;background:var(--nv);color:var(--mu)}
+.tg.na{background:rgba(224,74,48,.16);color:var(--na)}.tg.wa{background:rgba(232,163,23,.22);color:#a56d00}.dark .tg.wa{color:#f0b84a}
+.tg.an{background:rgba(58,157,93,.18);color:var(--an)}.tg.pr{background:rgba(28,109,181,.15);color:var(--pr)}.dark .tg.pr{background:rgba(75,157,227,.18)}
+.bkw{display:flex;align-items:flex-end;gap:8px;height:150px;margin-top:6px}
+.bkc{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;min-width:0}
+.bkc>b{font-size:13px;margin-bottom:3px}
+.bkc .st{width:100%;max-width:64px;display:flex;flex-direction:column-reverse;border-radius:5px 5px 0 0;overflow:hidden;min-height:2px;background:var(--nv)}
+.bkc .st i{display:block;width:100%}
+.bkl{display:flex;gap:8px;margin-top:6px}.bkl small{flex:1;text-align:center;font-size:12px;min-width:0}
+.slg{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px}
+.slq{display:flex;gap:8px;align-items:center;text-align:left;width:100%;padding:8px 11px}
+.slq span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px;color:var(--mu)}
+.chips{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:0 0 10px}
+.chip{border-radius:99px;padding:4px 14px;font-size:14px}.chip.on{background:var(--pr);border-color:var(--pr);color:#fff}
+.chips select{width:auto;max-width:100%;padding:5px 8px;margin-left:auto}
+tr.rx td{background:var(--bt);padding:12px}
+tr.r:focus-visible{outline:2px solid var(--pr);outline-offset:-2px}
+tr.r[aria-expanded=true]{background:var(--bt)}
+@keyframes flr{from{background:rgba(28,109,181,.32)}to{background:var(--bt)}}
+tr.flash{animation:flr 1.8s ease-out}
+.emp{padding:18px 4px;text-align:center}
+@media(max-width:640px){.hm{display:none}.rtabs button{padding:7px 14px}.mb{grid-template-columns:minmax(90px,120px) 1fr 62px}.hero{flex-direction:column;align-items:stretch;gap:12px}.hr{min-width:0}.ring{width:132px;height:132px}.kp{grid-template-columns:repeat(3,1fr);gap:6px}.kp div{padding:7px 9px}.kp b{font-size:17px}.hero h2{text-align:center}.verdict,.hr>small{display:block;text-align:center}.hr>.bar{justify-content:center}.hr>.bar button{flex:1 1 100%}}
+@media(prefers-reduced-motion:reduce){.ring .pg{transition:none}tr.flash{animation:none}}
 </style></head><body>
 <header><h1 id="ttl">JEE PYQ CBT Practice</h1><span class="by">Made by <b>DIVYANSH</b></span><span class="sp"></span><span id="tm" hidden></span><button onclick="tg()" id="thm" aria-label="Toggle dark mode">Dark mode</button></header>
 <div class="wrap" id="app"></div>
@@ -260,7 +328,7 @@ async function renderBook(bk,qs,cb){
    Setup screen
    ===================================================================== */
 function setup(){
- clearInterval(iv);S=null;$('#tm').hidden=true;$('#ttl').textContent='JEE PYQ CBT Practice';A.className='wrap';scrollTo(0,0);
+ if(RO){RO.disconnect();RO=null}clearInterval(iv);S=null;$('#tm').hidden=true;$('#ttl').textContent='JEE PYQ CBT Practice';A.className='wrap';scrollTo(0,0);
  A.innerHTML=`<div id="cDirty"></div><div id="cSaved"></div><div id="cProg"></div><div id="cBooks"></div><div id="cSel"></div><div id="cHist"></div><div class="pgfoot">Made by DIVYANSH · your data stays in your browser</div>`;
  rDirty();rProg();rBooks();rSel();rHist();
 }
@@ -479,57 +547,210 @@ function grade(q,r){
  return r==q.a}
 const show=(q,v)=>v===''||v==null?'-':v;
 function grp(R,fn){const m=new Map();R.forEach(x=>{const k=fn(x);if(!m.has(k))m.set(k,[]);m.get(k).push(x)});return[...m]}
+const tsum=a=>a.reduce((s,x)=>s+x.t,0),pct=(a,b)=>b?Math.round(100*a/b):0,plural=(n,w,p)=>n+' '+(n==1?w:p||w+'s');
+const sgn=v=>v>0?'+'+v:v<0?'−'+Math.abs(v):'0';
+const stat=a=>{const c=a.filter(x=>x.att&&x.c===true).length,w=a.filter(x=>x.att&&x.c===false).length,t=tsum(a);
+ return{n:a.length,c,w,u:a.length-c-w,m:a.reduce((s,x)=>s+x.m,0),t,avg:a.length?t/a.length:0,acc:c+w?Math.round(100*c/(c+w)):null}};
+const rlab=x=>x.att?(x.c===null?'ungraded':x.c?'correct':'incorrect'):'unattempted';
+let Z=null,RT='ov',RO=null,RV={f:'',ch:''};
+
 function finish(){
  if(!S||S.done)return;S.done=1;clearInterval(iv);tick();$('#tm').hidden=true;
  const R=S.q.map((q,i)=>{const r=S.r[i],att=r!=='',c=att?grade(q,r):null;
   return{i,q,att,c,m:!att||c===null?0:c?S.mp:-S.mn,t:S.tm[i],s:!att||c===null?'sk':c?'ok':'no'}});
- const sc=R.reduce((a,x)=>a+x.m,0),mx=S.q.length*S.mp,co=R.filter(x=>x.att&&x.c===true),wr=R.filter(x=>x.att&&x.c===false),un=R.filter(x=>!x.att),ug=R.filter(x=>x.att&&x.c===null);
- const sum=a=>a.reduce((s,x)=>s+x.t,0),used=sum(R),acc=co.length+wr.length?Math.round(100*co.length/(co.length+wr.length)):0,avg=used/Math.max(1,R.length);
+ /* how each question stood BEFORE this test (feeds the "compared with earlier attempts" card) */
+ const prev=R.map(x=>{const b=DB.books[x.q.bk.slug],r=b&&b.q[x.q.n];return r?r.s:null});
+ const z=analyse(R,prev),now=Date.now();
  /* save progress */
- const now=Date.now();
  R.forEach(x=>{const b=DB.books[x.q.bk.slug]||(DB.books[x.q.bk.slug]={name:x.q.bk.name,q:{}}),old=b.q[x.q.n]||{};
   b.q[x.q.n]={s:x.att&&x.c===true?'c':x.att&&x.c===false?'w':'u',a:(old.a||0)+1,w:(old.w||0)+(x.att&&x.c===false?1:0),t:Math.round(x.t),ts:now}});
- DB.hist.push({id:now,ts:now,name:S.name,date:new Date().toLocaleString(),score:sc,max:mx,acc,time:Math.round(used),n:S.q.length,co:co.length,wr:wr.length,un:un.length+ug.length,
+ DB.hist.push({id:now,ts:now,name:S.name,date:new Date().toLocaleString(),score:z.sc,max:z.mx,acc:z.acc,time:Math.round(z.used),n:z.n,co:z.co.length,wr:z.wr.length,un:z.un.length+z.ug.length,
   qs:R.map(x=>[x.q.bk.slug,x.q.n,S.r[x.i],x.q.a,Math.round(x.t),x.m])});
  DB.hist=DB.hist.slice(-150);saveDB();setDirty(true);
- /* analysis */
- const max=Math.max(sum(co),sum(wr),sum(un),1),bar=(l,a,cl)=>`<div style="margin:6px 0">${l}: <b>${fmt(sum(a))}</b> <small>(avg ${a.length?fmt(sum(a)/a.length):'0:00'} over ${a.length})</small><br><span class="tb" style="background:${cl};width:${Math.max(2,sum(a)/max*100)}%"></span></div>`;
- const sl=R.slice().sort((a,b)=>b.t-a.t).slice(0,5);
- const stat=a=>{const c=a.filter(x=>x.att&&x.c===true).length,w=a.filter(x=>x.att&&x.c===false).length;return{n:a.length,c,w,u:a.length-c-w,m:a.reduce((s,x)=>s+x.m,0),t:sum(a),acc:c+w?Math.round(100*c/(c+w)):null}};
- const tbl=(title,g)=>`<tr><th>${title}</th><th>Qs</th><th>Correct</th><th>Wrong</th><th>Skipped</th><th>Marks</th><th>Accuracy</th><th>Time</th></tr>`+g.map(([k,a])=>{const s=stat(a);return`<tr><td>${esc(k)}</td><td>${s.n}</td><td class="ok">${s.c}</td><td class="no">${s.w}</td><td class="sk">${s.u}</td><td>${s.m}</td><td>${s.acc==null?'-':`<span class="ab"><i style="width:${s.acc}%"></i></span> ${s.acc}%`}</td><td>${fmt(s.t)}</td></tr>`}).join('');
- const rushed=wr.filter(x=>x.t<avg*.5).length,slowW=wr.filter(x=>x.t>avg*1.5).length,slowC=co.filter(x=>x.t>avg*2).length;
- const ins=[];
- if(co.length&&wr.length)ins.push(`Average time: <b>${fmt(sum(co)/co.length)}</b> on correct vs <b>${fmt(sum(wr)/wr.length)}</b> on wrong answers.`);
- if(rushed)ins.push(`<b>${rushed}</b> wrong answer(s) took under half the average time - possible rushing or guessing.`);
- if(slowW)ins.push(`<b>${slowW}</b> wrong answer(s) took over 1.5× the average - long time spent, still missed (revise these concepts).`);
- if(slowC)ins.push(`<b>${slowC}</b> correct answer(s) took over 2× the average - right but slow; practise for speed.`);
- const un0=un.filter(x=>x.t>5).length;if(un0)ins.push(`<b>${un0}</b> question(s) were opened for more than 5 s but left unanswered.`);
- if(ug.length)ins.push(`${ug.length} attempted question(s) had no answer key and were not graded.`);
- const multi=S.secs.length>1;
- const gch=grp(R,x=>(multi?x.q.sub+' - ':'')+x.q.ch);
- const lgd='<div class="lgd"><span><i style="background:var(--an)"></i>Correct</span><span><i style="background:var(--na)"></i>Wrong</span><span><i style="background:var(--nv)"></i>Skipped</span></div>';
- const stk=g=>g.map(([k,a])=>{const s=stat(a),n=s.n||1;return`<div class="sb"><div class="sbn" title="${esc(k)}">${esc(k)}</div><div class="sbt"><i style="width:${s.c/n*100}%;background:var(--an)"></i><i style="width:${s.w/n*100}%;background:var(--na)"></i></div><div class="sbv">${s.c} / ${s.w} / ${s.u}</div></div>`}).join('');
- A.className='wrap';scrollTo(0,0);$('#ttl').textContent='Result';
- A.innerHTML=`<div id="cDirty"></div><div class="card"><h2 style="margin:0 0 10px">${esc(S.name)}</h2><div class="stats">
- <div class="stat"><small>Score</small><b>${sc} / ${mx}</b></div><div class="stat"><small>Correct</small><b class="ok">${co.length}</b></div>
- <div class="stat"><small>Incorrect</small><b class="no">${wr.length}</b></div><div class="stat"><small>Unattempted</small><b>${un.length}</b></div>
- <div class="stat"><small>Accuracy</small><b>${acc}%</b></div><div class="stat"><small>Time used</small><b>${fmt(used)} / ${fmt(S.tot)}</b></div>
- <div class="stat"><small>Avg per question</small><b>${fmt(avg)}</b></div></div>
- <div class="bar"><button class="pri" onclick="setup()">New test</button>${wr.length+un.length?`<button onclick="retry()">Retry the ${wr.length+un.length} wrong / unattempted</button>`:''}<button onclick="dl()">Download progress file</button></div>
- <small>Your results were saved in this browser. Download the progress file so the app remembers them next time on any device.</small></div>
- <div class="g2"><div class="card"><h3>Result split</h3><div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">${gDonut(co.length,wr.length,un.length+ug.length,acc+'%')}<div style="line-height:1.9"><span class="ok">● Correct ${co.length}</span><br><span class="no">● Incorrect ${wr.length}</span><br><span class="sk">● Unattempted ${un.length+ug.length}</span><br><small>Marks: +${co.length*S.mp} − ${wr.length*S.mn} = <b>${sc}</b></small></div></div></div>
- <div class="card"><h3>Score trend <small>(last tests)</small></h3>${gTrend(DB.hist)}</div></div>
- <div class="card"><h3>Time per question</h3><div class="chart">${gTime(R,avg)}</div><div class="lgd"><span><i style="background:var(--an)"></i>Correct</span><span><i style="background:var(--na)"></i>Wrong</span><span><i style="background:var(--mu)"></i>Unattempted</span><span>- - - average ${fmt(avg)}</span></div></div>
- <div class="g2"><div class="card"><h3>Time by result</h3>${bar('Correct',co,'var(--an)')}${bar('Incorrect',wr,'var(--na)')}${bar('Unattempted',un,'var(--mu)')}</div>
- <div class="card"><h3>Slowest questions</h3>${sl.map(x=>`Q${x.i+1}: <b>${fmt(x.t)}</b> <span class="${x.s}">${x.att?(x.c===null?'ungraded':x.c?'correct':'incorrect'):'unattempted'}</span><br>`).join('')}</div></div>
- ${ins.length?`<div class="card"><h3>What the timing says</h3><ul class="ins">${ins.map(i=>`<li>${i}</li>`).join('')}</ul></div>`:''}
- <div class="card"><h3>Chapter-wise</h3>${stk(gch)}${lgd}<div style="overflow-x:auto;margin-top:12px"><table>${tbl('Chapter',gch)}</table></div>${multi?`<h3 style="margin-top:16px">Subject-wise</h3><div style="overflow-x:auto"><table>${tbl('Subject',grp(R,x=>x.q.sub))}</table></div>`:''}</div>
- <div class="card"><h3 style="margin-top:0">Review <small>(click a row to see the question)</small></h3><div class="bar" style="margin:0 0 8px"><button onclick="fl('')">All</button><button onclick="fl('ok')">Correct</button><button onclick="fl('no')">Incorrect</button><button onclick="fl('sk')">Unattempted</button></div>
- <div style="overflow-x:auto"><table><tr><th>Q</th><th>Chapter</th><th>Source</th><th>Type</th><th>Your answer</th><th>Correct</th><th>Result</th><th>Marks</th><th>Time</th><th>Save</th></tr>
- ${R.map(x=>{const q=x.q;return`<tr class="r ${x.s}f" onclick="this.nextElementSibling.hidden=!this.nextElementSibling.hidden"><td>${x.i+1}</td><td>${esc(q.ch)}</td><td><small>${esc(q.src)}</small></td><td>${q.t}</td><td>${esc(show(q,S.r[x.i]))}</td><td>${q.a?esc(q.a):'?'}</td><td class="${x.s}">${x.att?(x.c===null?'Ungraded':x.c?'Correct':'Incorrect'):'Unattempted'}</td><td>${x.m}</td><td>${fmt(x.t)}</td><td><button class="plus ${isSaved(q.bk.slug+'#'+q.n)?'on':''}" data-k="${q.bk.slug}#${q.n}" onclick="event.stopPropagation();saveRev(${x.i})" title="Save to a folder" aria-label="Save to a folder">+</button></td></tr><tr hidden class="${x.s}f"><td colspan="10">${q.img?`<img class="q" style="width:calc(${q.img.ptw}px*var(--z))" src="${q.img.url}" alt="">`:'(image not available)'}</td></tr>`}).join('')}</table></div></div>
+ Z=z;RT='ov';RV={f:'',ch:''};showResult()}
+
+/* ---------- numbers behind the dashboard ---------- */
+function analyse(R,prev){
+ const n=R.length,co=R.filter(x=>x.att&&x.c===true),wr=R.filter(x=>x.att&&x.c===false),un=R.filter(x=>!x.att),ug=R.filter(x=>x.att&&x.c===null);
+ const sc=R.reduce((a,x)=>a+x.m,0),mx=n*S.mp,used=tsum(R),avg=used/Math.max(1,n),multi=S.secs.length>1;
+ const chs=grp(R,x=>(multi?x.q.sub+' - ':'')+x.q.ch).map(([k,a])=>Object.assign({k,ch:a[0].q.ch,sub:a[0].q.sub,a},stat(a)));
+ const subs=grp(R,x=>x.q.sub).map(([k,a])=>Object.assign({k,a},stat(a)));
+ return{R,prev,n,co,wr,un,ug,sc,mx,used,avg,multi,chs,subs,acc:pct(co.length,co.length+wr.length),graded:co.length+wr.length,att:n-un.length,
+  nv:R.filter(x=>!S.st[x.i]).length,slow:x=>avg>0&&x.t>avg*1.5}}
+
+function verdict(z){const p=z.mx?z.sc/z.mx:0;
+ if(!z.att)return['Nothing attempted','var(--mu)'];
+ if(p>=.75)return['Excellent','var(--an)'];if(p>=.5)return['Strong result','var(--an)'];
+ if(p>=.25)return['Good progress','var(--pr)'];if(p>0)return['Room to grow','var(--wa)'];return['Needs focus','var(--na)']}
+
+const cdesc=c=>c.c+' of '+c.n+' correct'+(c.w?', '+c.w+' wrong':'')+(c.u?', '+c.u+' skipped':'');
+function insights(z){
+ const{R,co,wr,un,ug,avg,chs,subs,prev}=z,o=[],add=(c,t,d)=>o.push({c,t,d}),mp=S.mp,mn=S.mn;
+ if(wr.length&&mn>0){const lost=wr.length*mn;
+  add(lost>=z.mx*.1?'na':'wa',`Negative marking cost you ${lost} marks`,`Your ${plural(wr.length,'wrong answer')} lost ${lost} marks. Leaving ${wr.length==1?'it':'them'} blank would have given <b>${z.sc+lost}</b> instead of ${z.sc}.`)}
+ if(un.length){const op=un.filter(x=>x.t>5).length;
+  add('wa',`${plural(un.length,'question')} left blank`,`Up to <b>${un.length*mp}</b> marks were still available.${op?` ${op} of them ${op==1?'was':'were'} opened for more than 5 s.`:''}`)}
+ const cand=chs.filter(c=>c.c+c.w>0);
+ if(chs.length>=2&&cand.length>=2){
+  const best=cand.slice().sort((a,b)=>b.m-a.m||b.acc-a.acc||b.c-a.c)[0],worst=cand.slice().sort((a,b)=>a.m-b.m||a.acc-b.acc||b.w-a.w)[0];
+  if(best.c>0)add(best.acc>=60?'an':'pr',`Best chapter: ${esc(best.k)}`,cdesc(best)+'.');
+  if(worst!==best&&(worst.acc<60||worst.m<0)&&(best.m>worst.m||best.acc>worst.acc))add('na',`Needs work: ${esc(worst.k)}`,cdesc(worst)+'.')}
+ if(chs.length>=2&&avg>0){const sl=chs.slice().sort((a,b)=>b.avg-a.avg)[0];
+  if(sl.avg>avg*1.25&&sl.avg-avg>=10)add('pr',`Slowest chapter: ${esc(sl.k)}`,`${fmt(sl.avg)} per question against ${fmt(avg)} overall.`)}
+ if(avg>0){
+  const ru=wr.filter(x=>x.t<avg*.5).length,sw=wr.filter(x=>x.t>avg*1.5).length,sc2=co.filter(x=>x.t>avg*2).length;
+  if(ru)add('na',`${plural(ru,'rushed wrong answer')}`,`${ru==1?'It took':'These took'} under half the average time - possible guessing or careless reading.`);
+  if(sw)add('na',`${sw} slow and still wrong`,`${sw==1?'It took':'These took'} over 1.5× the average time and ${sw==1?'was':'were'} still missed - revise the underlying concept.`);
+  if(sc2)add('pr',`${sc2} correct but slow`,`${sc2==1?'It took':'These took'} over 2× the average time - right answers, so practise ${sc2==1?'it':'them'} for speed.`)}
+ const left=S.tot-z.used;
+ if(left>S.tot*.1)add('pr','Time was left over',`You finished with <b>${fmt(left)}</b> unused${un.length?` but skipped ${un.length} question${un.length==1?'':'s'} - use spare time to attempt more`:' - use it to re-check your answers'}.`);
+ else if(z.used>=S.tot*.97&&un.length)add('wa','The clock ran out',`You used nearly all of ${fmt(S.tot)} and ${plural(un.length,'question')} ${un.length==1?'was':'were'} left blank${z.nv?` (${z.nv} never opened)`:''}. Skip hard questions early and come back to them.`);
+ if(subs.length>=2){const g=subs.filter(s=>s.acc!=null).sort((a,b)=>b.acc-a.acc);
+  if(g.length>=2&&g[0].acc-g[g.length-1].acc>=15)add('pr',`${esc(g[0].k)} is stronger than ${esc(g[g.length-1].k)}`,`Accuracy of <b>${g[0].acc}%</b> against <b>${g[g.length-1].acc}%</b>.`)}
+ if(ug.length)add('wa',`${plural(ug.length,'answer')} not graded`,`${ug.length==1?'This attempted question has':'These attempted questions have'} no answer key, so ${ug.length==1?'it was':'they were'} not marked.`);
+ if(co.length&&!wr.length)add('an','No wrong answers',un.length?`Every question you attempted was right. The ${un.length} you skipped are the next marks to chase.`:'Every question was attempted and correct.');
+ const tried=R.filter((x,i)=>prev[i]);
+ if(tried.length){
+  const imp=tried.filter(x=>prev[x.i]!='c'&&x.s=='ok').length,sl2=tried.filter(x=>prev[x.i]=='c'&&x.s=='no').length,sw2=tried.filter(x=>prev[x.i]=='w'&&x.s=='no').length,keep=tried.filter(x=>prev[x.i]=='c'&&x.s=='ok').length;
+  const p=[];if(imp)p.push(`<b>${imp}</b> improved`);if(keep)p.push(`<b>${keep}</b> stayed correct`);if(sw2)p.push(`<b>${sw2}</b> still wrong`);if(sl2)p.push(`<b>${sl2}</b> slipped from correct to wrong`);
+  if(p.length)add(imp>sl2?'an':sl2>imp?'na':'pr','Compared with your earlier attempts',`Of ${tried.length} question${tried.length==1?'':'s'} you had tried before: ${p.join(', ')}.`)}
+ return o.slice(0,12)}
+
+function chFocus(c,avg){
+ if(c.acc==null)return['Not tried','','You did not answer any question here.'];
+ if(c.acc<50)return['Revise','na','Fewer than half of your answers were right.'];
+ if(c.u>=c.n/2)return['Attempt more','wa','Half or more of this chapter was left blank.'];
+ if(c.n>=2&&avg>0&&c.avg>avg*1.5)return['Speed up','pr','Accurate enough, but much slower than your average.'];
+ if(c.acc>=80)return['Strong','an','Most answers were right.'];
+ return['On track','pr','Accuracy is fine - keep practising.']}
+
+/* ---------- page ---------- */
+const TABS=[['ov','Overview'],['tm','Time'],['ch','Chapters'],['rv','Review']];
+function showResult(){
+ if(RO){RO.disconnect();RO=null}
+ const z=Z,body={ov:tabOv,tm:tabTm,ch:tabCh,rv:tabRv};
+ A.className='wrap';$('#ttl').textContent='Result';
+ A.innerHTML=`<div id="cDirty"></div>${heroHtml(z)}<div id="rts"></div>
+ <div class="rtabs" role="tablist" aria-label="Result sections" onkeydown="tabKey(event)">${TABS.map(([k,t])=>`<button role="tab" id="rtb-${k}" data-t="${k}" aria-controls="rt-${k}" onclick="tabTo('${k}')">${t}</button>`).join('')}</div>
+ ${TABS.map(([k])=>`<section class="rt" id="rt-${k}" role="tabpanel" aria-labelledby="rtb-${k}" hidden>${body[k](z)}</section>`).join('')}
  <div class="pgfoot">Made by DIVYANSH</div>`;
- rDirty()}
-function fl(c){document.querySelectorAll('tr.r').forEach(r=>{const m=!c||r.classList.contains(c+'f'),n=r.nextElementSibling;r.style.display=m?'':'none';n.hidden=true;n.style.display=m?'':'none'})}
+ rDirty();tabTo('ov',1);scrollTo(0,0);initCharts();
+ const rg=$('#rpg');if(rg)setTimeout(()=>{rg.style.strokeDashoffset=rg.dataset.to},60)}
+
+function tabTo(t,keep){
+ RT=t;
+ $$('.rtabs button').forEach(b=>{const on=b.dataset.t==t;b.classList.toggle('on',on);b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1});
+ $$('.rt').forEach(p=>p.hidden=p.id!='rt-'+t);
+ $$('#rt-'+t+' .cv').forEach(drawCv);
+ const s=$('#rts');if(!keep&&s){const y=s.offsetTop-56;if(scrollY>y)scrollTo(0,Math.max(0,y))}}
+function tabKey(e){
+ const k=TABS.map(x=>x[0]),i=k.indexOf(RT);let j=-1;
+ if(e.key=='ArrowRight')j=(i+1)%k.length;else if(e.key=='ArrowLeft')j=(i+k.length-1)%k.length;else if(e.key=='Home')j=0;else if(e.key=='End')j=k.length-1;
+ if(j<0)return;e.preventDefault();tabTo(k[j],1);$('#rtb-'+k[j]).focus()}
+
+function heroHtml(z){
+ const[vt,vc]=verdict(z);
+ return`<div class="card hero"><div class="hl">${gRing(z.sc,z.mx)}</div><div class="hr">
+ <h2>${esc(S.name)}</h2><p class="verdict" style="color:${vc}">${vt}</p>
+ <small>${z.att?`${z.graded?z.acc+'% accuracy':'No graded answers'} · ${z.att} of ${z.n} attempted (${pct(z.att,z.n)}%)${z.ug.length?` · ${z.ug.length} ungraded`:''}`:'No question was attempted.'}</small>
+ <div class="kp"><div><small>Correct</small><b class="ok">${z.co.length}</b></div><div><small>Incorrect</small><b class="no">${z.wr.length}</b></div><div><small>Unattempted</small><b>${z.un.length}</b></div>
+ <div><small>Accuracy</small><b>${z.graded?z.acc+'%':'-'}</b></div><div><small>Time used</small><b>${fmt(z.used)}</b><small>of ${fmt(S.tot)}</small></div><div><small>Avg / question</small><b>${fmt(z.avg)}</b></div></div>
+ <div class="bar"><button class="pri" onclick="setup()">New test</button>${z.wr.length+z.un.length?`<button onclick="retry()">Retry the ${z.wr.length+z.un.length} wrong / unattempted</button>`:''}<button onclick="dl()">Download progress file</button></div>
+ <small>Your results were saved in this browser. Download the progress file so the app remembers them next time on any device.</small></div></div>`}
+
+/* ---------- Overview ---------- */
+function tabOv(z){
+ const ins=insights(z),mp=S.mp,earn=z.co.length*mp,lost=z.wr.length*S.mn,left=z.un.length*mp,w=v=>z.mx?Math.min(100,Math.abs(v)/z.mx*100):0;
+ const qm=z.R.map(x=>`<button class="qt ${x.s}" style="--h:${z.avg?Math.min(1,x.t/(3*z.avg)).toFixed(3):0}" onclick="goRev(${x.i})" title="Q${x.i+1} · ${esc(x.q.ch)} · ${rlab(x)} · ${fmt(x.t)}" aria-label="Question ${x.i+1}, ${rlab(x)}, ${fmt(x.t)}. Open in review.">${x.i+1}</button>`).join('');
+ return`${ins.length?`<div class="card"><h3>Key takeaways</h3><div class="igr">${ins.map(i=>`<div class="ic ${i.c}"><b>${i.t}</b><span>${i.d}</span></div>`).join('')}</div></div>`:''}
+ <div class="g2"><div class="card"><h3>Where your marks went</h3>
+  <div class="mb"><span>Earned from correct</span><span class="tr"><i style="width:${w(earn)}%;background:var(--an)"></i></span><span class="v ok">${sgn(earn)}</span></div>
+  <div class="mb"><span>Lost to wrong answers</span><span class="tr"><i style="width:${w(lost)}%;background:var(--na)"></i></span><span class="v no">${lost?'−'+lost:'0'}</span></div>
+  <div class="mb"><span>Left on the table</span><span class="tr"><i style="width:${w(left)}%;background:var(--mu)"></i></span><span class="v">${left}</span></div>
+  <div class="mb"><b>Net score</b><span class="tr"><i style="width:${w(Math.max(0,z.sc))}%;background:var(--pr)"></i></span><span class="v" style="color:${z.sc<0?'var(--na)':'var(--pr)'}">${z.sc}</span></div>
+  <p class="mnote mu">Out of ${z.mx} marks. ${S.mn?`Each wrong answer is a swing of ${mp+S.mn} marks compared with a correct one.`:'This test has no negative marking.'}</p></div>
+ <div class="card"><h3>Result split</h3><div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">${gDonut(z.co.length,z.wr.length,z.un.length+z.ug.length,z.acc+'%')}
+  <div style="line-height:1.9"><span class="ok">● Correct ${z.co.length}</span><br><span class="no">● Incorrect ${z.wr.length}</span><br><span class="sk">● Unattempted ${z.un.length+z.ug.length}</span></div></div></div></div>
+ <div class="card"><h3>Question map <small class="mu">(click a question to review it)</small></h3><div class="qmap">${qm}</div>
+  <div class="lgd"><span><i style="background:var(--an)"></i>Correct</span><span><i style="background:var(--na)"></i>Wrong</span><span><i style="background:var(--mu)"></i>Unattempted</span><span>White bar = time spent (full bar = 3× average)</span></div></div>
+ <div class="card"><h3>Score trend <small class="mu">(your last tests)</small></h3>${DB.hist.length>=2?`<div class="cv" data-g="trend"></div><div class="lgd"><span><i style="background:var(--pr)"></i>Score % of max</span><span><i style="background:var(--an)"></i>Accuracy %</span></div>`:'<p class="mu" style="margin:6px 0 0">Take at least two tests to see your trend here.</p>'}</div>`}
+
+/* ---------- Time ---------- */
+function bucketsHtml(z){
+ const b=S.tot/z.n;let e=[.25,.5,1,1.5].map(f=>Math.max(5,Math.round(b*f/5)*5));e=[...new Set(e)].sort((x,y)=>x-y);
+ const labs=e.map((v,i)=>i?fmt(e[i-1])+'–'+fmt(v):'under '+fmt(v));labs.push(fmt(e[e.length-1])+'+');
+ const bins=labs.map(()=>({ok:0,no:0,sk:0}));
+ z.R.forEach(x=>{let k=e.findIndex(v=>x.t<v);if(k<0)k=e.length;bins[k][x.s]++});
+ const tot=bins.map(x=>x.ok+x.no+x.sk),mx=Math.max(1,...tot);
+ return`<div class="bkw">${bins.map((x,i)=>`<div class="bkc" title="${labs[i]}: ${x.ok} correct, ${x.no} wrong, ${x.sk} unattempted"><b>${tot[i]||''}</b><div class="st" style="height:${tot[i]/mx*100}%"><i style="flex:${x.ok};background:var(--an)"></i><i style="flex:${x.no};background:var(--na)"></i><i style="flex:${x.sk};background:var(--mu)"></i></div></div>`).join('')}</div>
+ <div class="bkl">${labs.map(l=>`<small>${l}</small>`).join('')}</div>
+ <div class="lgd"><span><i style="background:var(--an)"></i>Correct</span><span><i style="background:var(--na)"></i>Wrong</span><span><i style="background:var(--mu)"></i>Unattempted</span></div>`}
+function tabTm(z){
+ const{co,wr,un,ug,R}=z,av=a=>a.length?fmt(tsum(a)/a.length):'-',left=Math.max(0,S.tot-z.used),mxT=Math.max(1,tsum(co),tsum(wr),tsum(un),tsum(ug));
+ const ca=co.length?tsum(co)/co.length:0,wa=wr.length?tsum(wr)/wr.length:0;
+ const read=co.length&&wr.length&&ca>0?(wa>=ca*1.25?`Your wrong answers took <b>${(wa/ca).toFixed(1)}×</b> as long as your correct ones - the questions that stall you are often better left for later.`
+  :wa<=ca*.8?'Your wrong answers were quicker than your correct ones - slow down a little on the ones you are unsure about.':'Your correct and wrong answers took about the same time.'):'';
+ const row=(l,a,c)=>`<div class="mb w"><span>${l}<small>${a.length} · avg ${av(a)}</small></span><span class="tr"><i style="width:${tsum(a)/mxT*100}%;background:${c}"></i></span><span class="v">${fmt(tsum(a))}</span></div>`;
+ const sl=R.filter(x=>x.t>0).sort((a,b)=>b.t-a.t).slice(0,6);
+ return`<div class="card"><h3>Time at a glance</h3><div class="kp" style="margin-top:6px"><div><small>Time used</small><b>${fmt(z.used)}</b><small>of ${fmt(S.tot)}</small></div><div><small>Avg / question</small><b>${fmt(z.avg)}</b><small>allowed ${fmt(S.tot/z.n)}</small></div>
+  <div><small>Avg on correct</small><b class="ok">${av(co)}</b></div><div><small>Avg on wrong</small><b class="no">${av(wr)}</b></div><div><small>Avg on unattempted</small><b>${av(un)}</b></div><div><small>Time unused</small><b>${fmt(left)}</b></div></div>
+  ${read?`<p class="mnote mu" style="font-size:14px">${read}</p>`:''}</div>
+ <div class="card"><h3>Time per question <small class="mu">(click a bar to review it)</small></h3><div class="cv" data-g="time"></div>
+  <div class="lgd"><span><i style="background:var(--an)"></i>Correct</span><span><i style="background:var(--na)"></i>Wrong</span><span><i style="background:var(--mu)"></i>Unattempted</span><span><i class="ln"></i>average ${fmt(z.avg)}</span><span><i class="ln b"></i>allowed ${fmt(S.tot/z.n)} per question</span></div></div>
+ <div class="card"><h3>Running clock</h3><div class="cv" data-g="clock"></div>
+  <p class="mnote mu">Time spent up to each question. Below the dashed line you were ahead of the clock; above it you were running behind.</p></div>
+ <div class="g2"><div class="card"><h3>Time by result</h3>${row('Correct',co,'var(--an)')}${row('Incorrect',wr,'var(--na)')}${row('Unattempted',un,'var(--mu)')}${ug.length?row('Ungraded',ug,'var(--pr)'):''}</div>
+ <div class="card"><h3>How long questions took</h3>${bucketsHtml(z)}</div></div>
+ ${sl.length?`<div class="card"><h3>Slowest questions</h3><div class="slg">${sl.map(x=>`<button class="slq" onclick="goRev(${x.i})"><b>Q${x.i+1}</b><span>${esc(x.q.ch)}</span><b>${fmt(x.t)}</b><i class="b2 ${x.s=='ok'?'c':x.s=='no'?'w':''}">${x.att?(x.c===null?'ungraded':x.c?'correct':'wrong'):'skipped'}</i></button>`).join('')}</div></div>`:''}`}
+
+/* ---------- Chapters ---------- */
+function tabCh(z){
+ const lgd='<div class="lgd"><span><i style="background:var(--an)"></i>Correct</span><span><i style="background:var(--na)"></i>Wrong</span><span><i style="background:var(--nv)"></i>Skipped</span></div>';
+ const stk=z.chs.map(c=>{const n=c.n||1;return`<div class="sb"><div class="sbn" title="${esc(c.k)}">${esc(c.k)}</div><div class="sbt"><i style="width:${c.c/n*100}%;background:var(--an)"></i><i style="width:${c.w/n*100}%;background:var(--na)"></i></div><div class="sbv">${c.c} / ${c.w} / ${c.u}</div></div>`}).join('');
+ const head=t=>`<tr><th>${t}</th><th>Qs</th><th>Correct</th><th>Wrong</th><th>Skipped</th><th>Marks</th><th>Accuracy</th><th>Avg time</th>`;
+ const cells=s=>`<td>${s.n}</td><td class="ok">${s.c}</td><td class="no">${s.w}</td><td class="sk">${s.u}</td><td>${s.m}</td><td>${s.acc==null?'-':`<span class="ab"><i style="width:${s.acc}%"></i></span> ${s.acc}%`}</td><td>${fmt(s.avg)}</td>`;
+ return`${z.chs.length>=3?`<div class="card"><h3>Chapter radar</h3><div class="cv" data-g="radar"></div>
+  <div class="lgd" style="justify-content:center"><span><i style="background:var(--pr)"></i>Correct (% of the chapter's questions)</span><span><i style="background:var(--an)"></i>Accuracy on attempted</span></div>${z.chs.length>12?'<p class="mnote mu" style="text-align:center">Showing the 12 chapters with the most questions.</p>':''}</div>`:''}
+ <div class="card"><h3>Chapter-wise</h3>${stk}${lgd}<div style="overflow-x:auto;margin-top:12px"><table>${head('Chapter')}<th>Focus</th></tr>${z.chs.map(c=>{const f=chFocus(c,z.avg);return`<tr><td>${esc(c.k)}</td>${cells(c)}<td><span class="tg ${f[1]}" title="${f[2]}">${f[0]}</span></td></tr>`}).join('')}</table></div></div>
+ ${z.multi?`<div class="card"><h3>Subject-wise</h3><div style="overflow-x:auto"><table>${head('Subject')}</tr>${z.subs.map(s=>`<tr><td>${esc(s.k)}</td>${cells(s)}</tr>`).join('')}</table></div></div>`:''}`}
+
+/* ---------- Review ---------- */
+function tabRv(z){
+ const cix=new Map();z.chs.forEach((c,k)=>c.a.forEach(x=>cix.set(x.i,k)));
+ const nSlow=z.R.filter(z.slow).length,cnt=s=>z.R.filter(x=>x.s==s).length;
+ const chips=[['','All',z.n],['ok','Correct',cnt('ok')],['no','Incorrect',cnt('no')],['sk','Unattempted',cnt('sk')],['slow','Slow',nSlow]];
+ const rows=z.R.map(x=>{const q=x.q,sl=z.slow(x);
+  return`<tr class="r" id="rr${x.i}" data-s="${x.s}" data-slow="${sl?1:0}" data-ch="${cix.get(x.i)}" tabindex="0" aria-expanded="false" onclick="rvTog(${x.i})" onkeydown="if(event.key=='Enter'||event.key==' '){event.preventDefault();rvTog(${x.i})}">
+  <td>${x.i+1}</td><td>${esc(q.ch)}${z.multi?`<br><small>${esc(q.sub)}</small>`:''}</td><td class="hm"><small>${esc(q.src)}</small></td><td class="hm">${q.t}</td><td>${esc(show(q,S.r[x.i]))}</td><td>${q.a?esc(q.a):'?'}</td>
+  <td class="${x.s}">${x.att?(x.c===null?'Ungraded':x.c?'Correct':'Incorrect'):'Unattempted'}</td><td class="hm">${x.m}</td><td>${fmt(x.t)}${sl?' <i class="b2 s">slow</i>':''}</td>
+  <td><button class="plus ${isSaved(q.bk.slug+'#'+q.n)?'on':''}" data-k="${q.bk.slug}#${q.n}" onclick="event.stopPropagation();saveRev(${x.i})" title="Save to a folder" aria-label="Save question ${x.i+1} to a folder">+</button></td></tr>
+  <tr class="rx" id="rx${x.i}" hidden><td colspan="10"></td></tr>`}).join('');
+ return`<div class="card"><h3 style="margin-top:0">Review <small class="mu">(click a row to see the question)</small></h3>
+ <div class="chips" id="rvchips">${chips.map(([k,t,n])=>`<button class="chip" data-f="${k}" onclick="rvF('${k}')">${t} (${n})</button>`).join('')}
+  ${z.chs.length>1?`<select id="rvch" aria-label="Filter by chapter" onchange="RV.ch=this.value;applyRv()"><option value="">All chapters</option>${z.chs.map((c,k)=>`<option value="${k}">${esc(c.k)}</option>`).join('')}</select>`:''}</div>
+ <div style="overflow-x:auto"><table id="rvt"><tr><th>Q</th><th>Chapter</th><th class="hm">Source</th><th class="hm">Type</th><th>Your answer</th><th>Correct</th><th>Result</th><th class="hm">Marks</th><th>Time</th><th>Save</th></tr>${rows}</table></div>
+ <p class="emp mu" id="rvno" hidden>No question matches this filter.</p></div>`}
+function rvF(f){RV.f=RV.f===f?'':f;applyRv()}
+function applyRv(){
+ let shown=0;
+ $$('#rvt tr.r').forEach(r=>{const d=r.dataset,ok=(!RV.f||(RV.f=='slow'?d.slow=='1':d.s==RV.f))&&(RV.ch===''||d.ch==RV.ch),x=r.nextElementSibling;
+  r.hidden=!ok;if(!ok){x.hidden=true;r.setAttribute('aria-expanded','false')}else shown++});
+ $$('#rvchips .chip').forEach(b=>{const on=b.dataset.f===RV.f;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
+ const s=$('#rvch');if(s)s.value=RV.ch;const e=$('#rvno');if(e)e.hidden=shown>0}
+function rvTog(i,open){
+ const r=$('#rr'+i),x=$('#rx'+i);if(!r||!x)return;const on=open!=null?open:x.hidden;x.hidden=!on;r.setAttribute('aria-expanded',on);
+ if(on&&!x.dataset.f){x.dataset.f=1;const q=S.q[i];x.firstElementChild.innerHTML=q.img?`<div class="qw"><img class="q" style="width:calc(${q.img.ptw}px*var(--z))" src="${q.img.url}" alt="Question ${i+1}"></div>`:'(image not available)'}}
+function goRev(i){
+ RV.f='';RV.ch='';tabTo('rv',1);applyRv();rvTog(i,true);
+ const r=$('#rr'+i);if(r){r.scrollIntoView({block:'center',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});r.classList.remove('flash');void r.offsetWidth;r.classList.add('flash')}}
+
+/* ---------- charts are drawn at the real width of their card ---------- */
+const GR={};
+function drawCv(e){const w=Math.floor(e.clientWidth);if(!w||e._w===w||!Z)return;e._w=w;e.innerHTML=GR[e.dataset.g](w)}
+function initCharts(){
+ GR.trend=gTrend;GR.time=gTime;GR.clock=gClock;GR.radar=gRadar;
+ if(window.ResizeObserver){RO=new ResizeObserver(es=>es.forEach(en=>drawCv(en.target)));$$('.cv').forEach(e=>RO.observe(e))}
+ $$('#rt-'+RT+' .cv').forEach(drawCv)}
 async function retry(){
  const items=[];S.q.forEach((q,i)=>{const r=S.r[i],c=r!==''?grade(q,r):null;if(r===''||c===false)items.push({bk:q.bk,q:q.qo})});
  if(!items.length)return;try{await launch(items,'Retry - '+S.name)}catch(e){ov(null);alert('Error: '+(e&&e.message||e))}}
@@ -541,23 +762,71 @@ function gDonut(co,wr,un,label){
  const t=co+wr+un||1,r=52,C=2*Math.PI*r;let off=0;
  const arc=(v,c)=>{if(!v)return'';const l=v/t*C,x=`<circle cx="70" cy="70" r="${r}" fill="none" stroke="${c}" stroke-width="22" stroke-dasharray="${l} ${C-l}" stroke-dashoffset="${-off}" transform="rotate(-90 70 70)"/>`;off+=l;return x};
  return`<svg viewBox="0 0 140 140" width="160" height="160" role="img" aria-label="Result split"><circle cx="70" cy="70" r="${r}" fill="none" stroke="var(--nv)" stroke-width="22"/>${arc(co,'var(--an)')}${arc(wr,'var(--na)')}${arc(un,'var(--mu)')}<text x="70" y="69" text-anchor="middle" font-size="24" font-weight="700" fill="currentColor">${label}</text><text x="70" y="86" text-anchor="middle" font-size="10" fill="var(--mu)">accuracy</text></svg>`}
-function gTime(R,avg){
- const n=R.length,bw=14,gap=5,L=40,Bm=24,H=180,W=Math.max(520,n*(bw+gap)+L+12),mx=Math.max(1,...R.map(x=>x.t)),ph=H-Bm-14,y=t=>H-Bm-(t/mx)*ph,step=n>40?5:n>20?2:1;
- const col=x=>x.s=='ok'?'var(--an)':x.att&&x.c===false?'var(--na)':'var(--mu)';
- let g=`<line x1="${L}" y1="${y(0)}" x2="${W-6}" y2="${y(0)}" stroke="var(--bd)"/><text x="${L-6}" y="${y(0)+4}" text-anchor="end" font-size="10" fill="var(--mu)">0</text><text x="${L-6}" y="${y(mx)+4}" text-anchor="end" font-size="10" fill="var(--mu)">${fmt(mx)}</text>`;
- R.forEach((x,i)=>{const h=Math.max(1.5,y(0)-y(x.t)),bx=L+i*(bw+gap)+gap;
-  g+=`<rect x="${bx}" y="${y(0)-h}" width="${bw}" height="${h}" rx="2" fill="${col(x)}"><title>Q${i+1}: ${fmt(x.t)} - ${x.att?(x.c===null?'ungraded':x.c?'correct':'incorrect'):'unattempted'}</title></rect>`;
-  if(i%step==0)g+=`<text x="${bx+bw/2}" y="${H-8}" text-anchor="middle" font-size="9" fill="var(--mu)">${i+1}</text>`});
- g+=`<line x1="${L}" y1="${y(avg)}" x2="${W-6}" y2="${y(avg)}" stroke="var(--pr)" stroke-dasharray="5 4" stroke-width="1.5"/>`;
- return`<svg viewBox="0 0 ${W} ${H}" style="width:100%;min-width:${W}px;max-width:${Math.round(W*1.8)}px;height:auto" role="img" aria-label="Time per question">${g}</svg>`}
-function gTrend(h){
- const a=h.slice(-12);if(a.length<2)return'<p class="mu" style="margin:6px 0 0">Take at least two tests to see your trend here.</p>';
- const W=420,H=175,L=34,Rr=12,T=12,B=26,pts=a.map(x=>x.max?Math.round(100*x.score/x.max):0),acc=a.map(x=>x.acc||0),lo=Math.min(0,...pts),hi=100;
+function gRing(sc,mx){
+ const p=mx?Math.max(0,Math.min(1,sc/mx)):0,r=56,C=+(2*Math.PI*r).toFixed(2),col=p>=.5?'var(--an)':p>=.25?'var(--pr)':'var(--wa)',big=String(sc).length>=4?30:36;
+ return`<svg class="ring" viewBox="0 0 150 150" role="img" aria-label="Score ${sc} out of ${mx}"><circle class="trk" cx="75" cy="75" r="${r}" fill="none" stroke-width="14"/>${p>0?`<circle class="pg" id="rpg" cx="75" cy="75" r="${r}" fill="none" stroke="${col}" stroke-width="14" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C}" data-to="${+(C*(1-p)).toFixed(2)}" transform="rotate(-90 75 75)"/>`:''}<text x="75" y="${big>30?80:79}" text-anchor="middle" font-size="${big}" font-weight="700" fill="${sc<0?'var(--na)':'currentColor'}">${sc}</text><text x="75" y="100" text-anchor="middle" font-size="12" fill="var(--mu)">out of ${mx}</text></svg>`}
+function niceMax(mx){const st=[5,10,15,30,60,120,180,300,600,900,1800,3600,7200],s=st.find(v=>mx/v<=4)||7200;return{s,top:Math.ceil(mx/s)*s}}
+const gridY=(L,W,Y,nm)=>{let g='';for(let v=0;v<=nm.top;v+=nm.s)g+=`<line class="gl" x1="${L}" x2="${W}" y1="${Y(v)}" y2="${Y(v)}"/><text class="gt" x="${L-7}" y="${Y(v)+4}" text-anchor="end">${fmt(v)}</text>`;return g};
+
+/* time per question: one bar each, plus the average and the allowed time */
+function gTime(W){
+ const R=Z.R,n=R.length,H=240,L=48,Rr=12,T=14,B=28,WW=Math.max(W,n*9+L+Rr),bud=S.tot/n;
+ const nm=niceMax(Math.max(1,...R.map(x=>x.t),Z.avg,bud)),Y=v=>T+(1-v/nm.top)*(H-T-B);
+ const slot=(WW-L-Rr)/n,bw=Math.max(3,Math.min(26,slot*.7)),step=Math.max(1,Math.ceil(n/Math.max(1,Math.floor((WW-L-Rr)/26)))),y0=Y(0);
+ let g=gridY(L,WW-Rr,Y,nm);
+ R.forEach((x,i)=>{const bx=L+i*slot+(slot-bw)/2,h=Math.max(2,y0-Y(x.t));
+  g+=`<rect class="f-${x.s}" x="${bx.toFixed(1)}" y="${(y0-h).toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" rx="2" onclick="goRev(${i})" style="cursor:pointer"><title>Q${i+1}: ${fmt(x.t)} - ${rlab(x)}</title></rect>`;
+  if(i%step==0)g+=`<text class="gt" x="${(bx+bw/2).toFixed(1)}" y="${H-9}" text-anchor="middle">${i+1}</text>`});
+ g+=`<line class="la" x1="${L}" x2="${WW-Rr}" y1="${Y(Z.avg)}" y2="${Y(Z.avg)}"/><line class="lb" x1="${L}" x2="${WW-Rr}" y1="${Y(bud)}" y2="${Y(bud)}"/>`;
+ return`<svg width="${WW}" height="${H}" viewBox="0 0 ${WW} ${H}" role="img" aria-label="Time spent on each question">${g}</svg>`}
+
+/* running clock: cumulative time against an even pace */
+function gClock(W){
+ const R=Z.R,n=R.length,H=230,L=52,Rr=18,T=16,B=30;let c=0;const cum=[0].concat(R.map(x=>c+=x.t));
+ const nm=niceMax(Math.max(S.tot,cum[n])),X=i=>L+i*(W-L-Rr)/n,Y=v=>T+(1-v/nm.top)*(H-T-B),step=Math.max(1,Math.ceil(n/Math.max(1,Math.floor((W-L-Rr)/28))));
+ let g=gridY(L,W-Rr,Y,nm);
+ g+=`<path d="M${X(0)},${Y(0)} ${cum.map((v,i)=>`L${X(i).toFixed(1)},${Y(v).toFixed(1)}`).join(' ')} L${X(n)},${Y(0)}Z" fill="var(--pr)" fill-opacity=".14"/>`;
+ g+=`<line class="la" style="stroke:var(--wa)" x1="${X(0)}" y1="${Y(0)}" x2="${X(n)}" y2="${Y(S.tot)}"/>`;
+ g+=`<polyline fill="none" stroke="var(--pr)" stroke-width="2.4" stroke-linejoin="round" points="${cum.map((v,i)=>X(i).toFixed(1)+','+Y(v).toFixed(1)).join(' ')}"/>`;
+ if(n<=60)cum.forEach((v,i)=>{if(i)g+=`<circle cx="${X(i).toFixed(1)}" cy="${Y(v).toFixed(1)}" r="2.6" fill="var(--pr)"><title>After Q${i}: ${fmt(v)} used (even pace: ${fmt(S.tot*i/n)})</title></circle>`});
+ for(let i=1;i<=n;i++)if(i%step==0||i==1)g+=`<text class="gt" x="${X(i).toFixed(1)}" y="${H-9}" text-anchor="middle">${i}</text>`;
+ g+=`<circle cx="${X(n)}" cy="${Y(cum[n])}" r="4.5" fill="var(--pr)"/><text class="gt" style="fill:var(--tx);font-weight:600" x="${X(n)-8}" y="${Y(cum[n])-9}" text-anchor="end">${fmt(cum[n])} used</text>`;
+ return`<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Cumulative time used against an even pace">${g}</svg>`}
+
+/* radar: labels wrap onto two lines and are given room from the real width */
+function wrapL(s,m){
+ const w=s.split(/\s+/).filter(Boolean),L=[];let cur='';
+ for(let i=0;i<w.length;i++){
+  if(!cur)cur=w[i];else if((cur+' '+w[i]).length<=m)cur+=' '+w[i];else{L.push(cur);cur=w.slice(i).join(' ');break}}
+ L.push(cur);return L.slice(0,2).map(l=>l.length>m?l.slice(0,m-1)+'…':l)}
+function gRadar(W){
+ const top=new Set(Z.chs.slice().sort((a,b)=>b.n-a.n).slice(0,12)),cs=Z.chs.filter(c=>top.has(c)),n=cs.length;
+ const nm=cs.map(c=>c.ch),dup=new Set(nm.filter((x,i)=>nm.indexOf(x)!=i));
+ const H=W<480?340:380,cx=W/2,cy=H/2,lw=Math.max(76,Math.min(200,W*.25)),R=Math.max(46,Math.min(cy-34,cx-lw-12)),cpl=Math.max(9,Math.floor(lw/(W<480?5.7:6.4)));
+ const ang=k=>-Math.PI/2+2*Math.PI*k/n,P=(k,v)=>[cx+R*v/100*Math.cos(ang(k)),cy+R*v/100*Math.sin(ang(k))],pts=f=>cs.map((c,k)=>P(k,f(c)).map(v=>v.toFixed(1)).join(',')).join(' ');
+ let g='';
+ [25,50,75,100].forEach(v=>{g+=`<polygon points="${pts(()=>v)}" fill="none" class="gl"/>`});
+ cs.forEach((c,k)=>{const[x,y]=P(k,100);g+=`<line class="gl" x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}"/>`});
+ [50,100].forEach(v=>g+=`<text class="gt" x="${cx+4}" y="${(cy-R*v/100+11).toFixed(1)}" style="font-size:10px">${v}</text>`);
+ const A1=c=>Math.round(c.c/c.n*100),B1=c=>c.acc||0;
+ g+=`<polygon points="${pts(A1)}" fill="var(--pr)" fill-opacity=".22" stroke="var(--pr)" stroke-width="2" stroke-linejoin="round"/><polygon points="${pts(B1)}" fill="var(--an)" fill-opacity=".1" stroke="var(--an)" stroke-width="2" stroke-linejoin="round"/>`;
+ cs.forEach((c,k)=>{const tip=`${esc(c.k)}: ${c.c} of ${c.n} correct (${A1(c)}%), accuracy on attempted ${c.acc==null?'-':c.acc+'%'}`;
+  [[A1(c),'var(--pr)'],[B1(c),'var(--an)']].forEach(([v,col])=>{const[x,y]=P(k,v);g+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3.6" fill="${col}"><title>${tip}</title></circle>`});
+  const cs2=Math.cos(ang(k)),sn=Math.sin(ang(k)),[lx,ly]=[cx+(R+12)*cs2,cy+(R+12)*sn],an=cs2>.3?'start':cs2<-.3?'end':'middle',ls=wrapL(dup.has(c.ch)?c.k:c.ch,cpl);
+  const y0=sn<-.55?ly-(ls.length-1)*14-4:sn>.55?ly+13:ly+4-(ls.length-1)*7;
+  g+=`<text class="rl" ${W<480?'style="font-size:11px" ':''}text-anchor="${an}" x="${lx.toFixed(1)}" y="${y0.toFixed(1)}"><title>${esc(c.k)}</title>${ls.map((l,j)=>`<tspan x="${lx.toFixed(1)}" dy="${j?14:0}">${esc(l)}</tspan>`).join('')}</text>`});
+ return`<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Chapter radar">${g}</svg>`}
+
+/* score trend: fills the width of its card */
+function gTrend(W){
+ const a=DB.hist.slice(-12),off=DB.hist.length-a.length,H=240,L=46,Rr=20,T=16,B=32;
+ if(a.length<2)return'';
+ const pts=a.map(x=>x.max?Math.round(100*x.score/x.max):0),acc=a.map(x=>x.acc||0),lo=Math.min(0,...pts),hi=100;
  const X=i=>L+i*(W-L-Rr)/(a.length-1),Y=v=>T+(hi-v)/(hi-lo)*(H-T-B);
- const line=(vs,c,nm)=>`<polyline fill="none" stroke="${c}" stroke-width="2.5" points="${vs.map((v,i)=>X(i)+','+Y(v)).join(' ')}"/>`+vs.map((v,i)=>`<circle cx="${X(i)}" cy="${Y(v)}" r="3.5" fill="${c}"><title>${esc(a[i].name)} - ${nm}: ${v}%</title></circle>`).join('');
- let g='';[0,50,100].forEach(v=>{g+=`<line x1="${L}" y1="${Y(v)}" x2="${W-Rr}" y2="${Y(v)}" stroke="var(--bd)"/><text x="${L-5}" y="${Y(v)+3}" text-anchor="end" font-size="10" fill="var(--mu)">${v}%</text>`});
- a.forEach((_,i)=>{g+=`<text x="${X(i)}" y="${H-8}" text-anchor="middle" font-size="9" fill="var(--mu)">${i+1}</text>`});
- return`<div class="chart"><svg viewBox="0 0 ${W} ${H}" style="width:100%;min-width:300px;max-width:560px;height:auto" role="img" aria-label="Score trend">${g}${line(acc,'var(--an)','accuracy')}${line(pts,'var(--pr)','score')}</svg></div><div class="lgd"><span><i style="background:var(--pr)"></i>Score % of max</span><span><i style="background:var(--an)"></i>Accuracy %</span></div>`}
+ const line=(vs,c,nm)=>`<polyline fill="none" stroke="${c}" stroke-width="2.5" stroke-linejoin="round" points="${vs.map((v,i)=>X(i).toFixed(1)+','+Y(v).toFixed(1)).join(' ')}"/>`+vs.map((v,i)=>`<circle cx="${X(i).toFixed(1)}" cy="${Y(v).toFixed(1)}" r="${i==vs.length-1?5:3.6}" fill="${c}"><title>${esc(a[i].name)} - ${nm}: ${v}%</title></circle>`).join('');
+ let g='';[...new Set([lo,0,50,100])].forEach(v=>{g+=`<line class="gl" x1="${L}" y1="${Y(v)}" x2="${W-Rr}" y2="${Y(v)}"${v==0&&lo<0?' style="stroke:var(--mu)"':''}/><text class="gt" x="${L-7}" y="${Y(v)+4}" text-anchor="end">${v}%</text>`});
+ a.forEach((x,i)=>{g+=`<text class="gt" x="${X(i).toFixed(1)}" y="${H-10}" text-anchor="middle">${off+i+1}</text>`});
+ return`<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Score trend across your last tests">${g}${line(acc,'var(--an)','accuracy')}${line(pts,'var(--pr)','score')}</svg>`}
 
 /* =====================================================================
    Folders (saved questions)
